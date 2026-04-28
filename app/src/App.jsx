@@ -13,7 +13,8 @@ function App() {
   
   // initial states
   const [node, setNode] = useState('start');
-  const [stats, setStats] = useState('gameData.startingStats');
+  const [vStats, setVStats] = useState(gameData.startingStats.visible);
+  const [hStats, setHStats] = useState(gameData.startingStats.hidden);
   const [epilogue, setEpilogue] = useState(false);
 
   // first scenario
@@ -21,6 +22,39 @@ function App() {
 
   // choice handler function
   const handleChoice = (choice) => {
+    if (choice.stat_changes?.visible) {
+
+      // new visible stats
+      const newVStats = { ...vStats };
+
+      for (const [key, value] of Object.entries(choice.stat_changes.visible)) {
+        newVStats[key] += value;
+      }
+
+      setVStats(newVStats);
+    }
+
+    if (choice.stat_changes?.hidden) {
+
+      // new hidden stats
+      const newHStats = { ...hStats }
+
+
+      for (const [key, value] of Object.entries(choice.stat_changes.hidden)) {
+        newHStats[key] += value;
+      }
+
+      setHStats(newHStats);
+    }
+
+    // set the next node
+    if (choice.next_node === "epilogue_trigger") {
+      setEpilogue(true);
+    }
+
+    else {
+      setNode(choice.next_node);
+    }
 
   }
 
