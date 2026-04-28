@@ -4,8 +4,37 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
+import gameData from './gameData.json';
+
+currNodeId = 
+
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  
+  // initial states
+  const [node, setNode] = useState('start');
+  const [stats, setStats] = useState('gameData.startingStats');
+  const [epilogue, setEpilogue] = useState(false);
+
+  // first scenario
+  const scenario = gameData.nodes.find(node => node.id === currentNodeId);
+
+  // choice handler function
+  const handleChoice = (choice) => {
+
+  }
+
+  // builds and gets epilogue
+  const getEpilogue = () => {
+    
+  }
+
+  // displays epilogue if reached
+  if(epilogue) {
+    return (
+      0
+    );
+  }
 
   return (
     <>
