@@ -11,7 +11,7 @@
     {
       "id": "start",
       "text": "Welcome to your freshman year. The next four years will dictate your future. Before the journey begins, you must declare your major. This choice will define the expectations society places upon you.",
-      "quote": "\"The perceived security of the status quo is a dangerous illusion.\"",
+      "quote": "\"Man is ultimately self-determining.\" - Victor E. Frankl (133)",
       "choices": [
         {
           "text": "Engineering - Chase the tech boom and build the infrastructure of tomorrow.",
@@ -29,7 +29,7 @@
     {
       "id": "engr_sem1",
       "text": "Your introductory engineering class is designed to weed people out. It feels like everyone around you is ahead of you. There is immense pressure to stand out.",
-      "quote": "\"FRANKL QUOTE\" - Victor E. Frankl",
+      "quote": "\"That which does not kill me makes me stronger.\" - Victor E. Frankl (82)",
       "choices": [
         {
           "text": "Cheat on the final project by copying an upperclassman's design.",
@@ -51,7 +51,7 @@
     {
       "id": "engr_sem2_conform",
       "text": "You scored a prestigious interview, but the company builds addictive social media algorithms. Your peers are jealous.",
-      "quote": "\"MARX QUOTE\" - Karl Marx",
+      "quote": "\"The life that he ahs given to the object sets itself against him as an alien and horrible force.\" - Karl Marx (151)",
       "choices": [
         {
           "text": "Ace the interview. Optimize the algorithm for maximum user retention.",
@@ -73,7 +73,7 @@
     {
       "id": "engr_sem2_rebel",
       "text": "Your open-source project was mocked by your peers for lacking ambition and not generating money. You're offered a chance to join one of the best hackathon teams on campus, but their project is a sketchy crypto exchange.",
-      "quote": "\"AFFLUENZA QUOTE\" - Affluenza Author.",
+      "quote": "\"Groups are more immoral than individuals.\" - Martin Luther King Jr. (210).",
       "choices": [
         {
           "text": "Join the team for the prize money and resume boost - the LinkedIn post after winning will feel great.",
@@ -95,7 +95,7 @@
     {
       "id": "engr_sem2_avoid",
       "text": "Coasting is catching up to you. The impostor syndrome is killing your self-esteem. A professor offers you a spot in a research lab, but it requires long and uncredited hours.",
-      "quote": "\"FRANKL QUOTE (Purpose)\" - Viktor Frankl",
+      "quote": "\"Sudden loss of hope and courage can have a deadly affect.\" - Viktor E. Frankl (75)",
       "choices": [
         {
           "text": "Take the lab spot and steal a grad student's data to publish first.",
@@ -161,7 +161,7 @@
     {
       "id": "engr_sem3_rebel",
       "text": "You are socially isolated but morally grounded. A local grassroots organization asks you to build a system to track corporate pollution, but it pays nothing and will take all your time.",
-      "quote": "\"CARSON QUOTE\" - Carson",
+      "quote": "\"For time is the essential ingredient; but in the modern world there is no time.\" - Carson (301)",
       "choices": [
         {
           "text": "Abandon them, it's a waste of time anyway. Take a lucrative freelance gig to work on missle defense systems.",
@@ -182,8 +182,8 @@
     },
     {
       "id": "engr_sem4_conform",
-      "text": "The 'Affluenza' has set in. You are obsessed with your starting salary. A defense contractor offers you a massive signing bonus to optimize drone targeting systems.",
-      "quote": "\"AFFLUENZA QUOTE\" - De Graaf",
+      "text": "You are obsessed with your starting salary. A defense contractor offers you a massive signing bonus to optimize drone targeting systems.",
+      "quote": "\"The virus is not confined to the upper class, but has found its way throughout our society.\" - De Graaf",
       "choices": [
         {
           "text": "Sign the contract. You'll be set for life.",
@@ -205,7 +205,7 @@
     {
       "id": "engr_sem4_avoid",
       "text": "The engineering career fair is happening on campus, and you don't know if your resume is good enough to get you a job.",
-      "quote": "\"MLK QUOTE\" - Martin Luther King Jr.",
+      "quote": "\"QUOTE\" - idk.",
       "choices": [
         {
           "text": "Lie on your resume to get yourself a high-paying job.",
@@ -227,7 +227,7 @@
     {
       "id": "engr_sem4_rebel",
       "text": "You're broke and your resume looks 'unconventional' to say the least. You discover a critical flaw in your university's cybersecurity system that exposes students' info.",
-      "quote": "\"MLK QUOTE\" - Martin Luther King Jr.",
+      "quote": "\"I gradually gained a bit of satisfaction from being an extremist.\" - Martin Luther King Jr. (212)",
       "choices": [
         {
           "text": "Blackmail the university for some money and a referral at a high-paying firm.",
@@ -249,7 +249,7 @@
     {
       "id": "engr_sem5_conform",
       "text": "The burn out is real. You can't get enough caffeine or social validation. For your senior capstone, your team wants to build an application that could potentially automate millions of jobs.",
-      "quote": "\"MARX QUOTE\" - Karl Marx",
+      "quote": "\"The worker becomes a slave of the object.\" - Karl Marx (151)",
       "choices": [
         {
           "text": "Take the lead on this one. The potential profitability is mouthwatering.",
@@ -293,7 +293,7 @@
     {
       "id": "engr_sem5_rebel",
       "text": "No one seems to like you, but that doesn't stop you. You need to use a mssive amount of power for your capstone. The 'normal' way is to use GPUs that consume horrific amounts of energy and water.",
-      "quote": "\"CARSON QUOTE\" - Rachel Carson",
+      "quote": "\"Man can hardly recognize the devil of his own creation.\" - Carson (301)",
       "choices": [
         {
           "text": "Take the easy route and use these resources. You need to graduate.",
@@ -315,7 +315,7 @@
     {
       "id": "engr_sem6_conform",
       "text": "It's finals season and you have a massive job offer waiting. If your GPA drops it gets rescinded. You discover the professor's exam key is circulating on a private server...",
-      "quote": "\"FRANKL QUOTE\" - Victor E. Frankl",
+      "quote": "\"He either wishes to do what other people do or he does what other people wish him to do.\" - Victor E. Frankl (106)",
       "choices": [
         {
           "text": "Download the key. Everyone else is so you might as well. Besides, you need that job.",
@@ -358,8 +358,8 @@
     },
     {
       "id": "engr_sem6_rebel",
-      "text": "Final exams. You're respected by a few, but completely ignored by the corporate recruiters. A startup offers you a large amount of equity to develop an app that takes advantage of gig workers.",
-      "quote": "\"MARX QUOTE\" - Karl Marx",
+      "text": "You're respected by a few, but completely ignored by the corporate recruiters. A startup offers you a large amount of equity to develop an app that takes advantage of gig workers.",
+      "quote": "\"Alienated labor reverses the relationship... he... makes his life activity, his being, only a means for his existence.\" - Karl Marx (154)",
       "choices": [
         {
           "text": "You're tired of being broke, miserable, and lonely. Accept the offer and get to building.",
@@ -381,7 +381,7 @@
     {
       "id": "engr_sem7_conform",
       "text": "You're in the final stretch. You are 'successful.' You have the job, the money, the clout. But you feel completely empty. A massive tech conference invites you to speak on Innovation.",
-      "quote": "\"MLK QUOTE\" - Martin Luther King Jr.",
+      "quote": "\"QUOTE\" - idk",
       "choices": [
         {
           "text": "Deliver a standard speech generated by ChatGPT, sprinkle in some buzzwords along the way.",
@@ -403,7 +403,7 @@
     {
       "id": "engr_sem7_avoid",
       "text": "You're completely checked out. You have no job lined up and no motivation. Your friend offers you a referral at a company that makes homeownership difficult for the average person.",
-      "quote": "\"MLK QUOTE\" - Martin Luther King Jr.",
+      "quote": "\"Lukewarm acceptance is more bewildering than outright rejection.\" - Martin Luther King Jr. (211)",
       "choices": [
         {
           "text": "Take the referral because you need the money.",
@@ -424,8 +424,8 @@
     },
     {
       "id": "engr_sem7_rebel",
-      "text": "You're barely scraping by financially, but you feel great on the inside. You get nominated for a community service award, but attending means missing your final exam review.",
-      "quote": "\"FRANKL QUOTE\" - Viktor Frankl",
+      "text": "You're barely scraping by financially, but you feel fine on the inside. You get nominated for a community service award, but attending means missing your final exam review.",
+      "quote": "\"Life's meaning is an unconditional one, for it even includes the potential meaning of unavoidable suffering.\" - Viktor E. Frankl (115)",
       "choices": [
         {
           "text": "You need to go to this review session, so you skip the award completely.",
@@ -447,7 +447,7 @@
     {
       "id": "engr_sem8_conform",
       "text": "Graduation is tomorrow. You are signing the final paperwork for a life you aren't sure you want. A junior asks you for advice on how to succeed.",
-      "quote": "\"IRON CAGE QUOTE\" - Max Weber",
+      "quote": "\"The iron cage will determine the lives of all individuals who are born into the mechanism... with irresistable force.\" - Max Weber (168)",
       "choices": [
         {
           "text": "Tell them to put their head down, grind hard, and chase the bag no matter what.",
@@ -469,7 +469,7 @@
     {
       "id": "engr_sem8_avoid",
       "text": "Graduation is tomorrow. You coasted through four years and have nothing to show for it, but a piece of paper and a whole lot of regret.",
-      "quote": "\"FRANKL QUOTE (Lack of Purpose)\" - Viktor Frankl",
+      "quote": "\"Man... always decides what his existence will be, what he will become in the next moment.\" - Viktor E. Frankl (131)",
       "choices": [
         {
           "text": "Panic and accept a soulless data-entry job just to have an income.",
@@ -491,7 +491,7 @@
     {
       "id": "engr_sem8_rebel",
       "text": "Graduation is tomorrow. You don't have a high-paying job lined up, but your tools are helping thousands. A corporate recruiter makes you a massive offer.",
-      "quote": "\"AFFLUENZA QUOTE\" - De Graaf",
+      "quote": "\"Even too much is not enough.\" - Affluenza",
       "choices": [
         {
           "text": "You're tired of fighting, so you take the money and finally sell out.",
@@ -514,7 +514,7 @@
 {
       "id": "hum_sem1",
       "text": "Your introductory humanities seminar has so many interesting people and ideas, but your counselor is already steering you toward marketing and corporate strategy because there's more salary upside.",
-      "quote": "\"FRANKL QUOTE\" - Victor E. Frankl",
+      "quote": "\"Freedom and responsibility are two sides of the same coin.\" - Victor E. Frankl (159)",
       "choices": [
         {
           "text": "Take their advice and drop the seminar's optional reading group. Join the pre-business networking club instead. You need that money.",
@@ -536,7 +536,7 @@
     {
       "id": "hum_sem2_conform",
       "text": "Your great writing catches the eye of a PR firm. They want you to lead a campaign burying negative press about a corporation involved in some shady business. They're paying you more money than you've ever seen in your life.",
-      "quote": "\"MARX QUOTE\" - Karl Marx",
+      "quote": "\"As he alienates his own activity, so he estows upon the stranger activity that is not his own.\" - Karl Marx (156)",
       "choices": [
         {
           "text": "Craft the campaign. You learn how to make immoral business dealings sound like generosity. That money helps at least.",
@@ -558,7 +558,7 @@
     {
       "id": "hum_sem2_rebel",
       "text": "Your blog gains a small following. A student media organization offers to absorb it with the condition that you accept corporate advertising and stop covering unheard voices on campus.",
-      "quote": "\"AFFLUENZA QUOTE\" - Affluenza Author.",
+      "quote": "\"Injustice anywhere is a threat to justice everywhere.\" - Martin Luther King Jr. (209)",
       "choices": [
         {
           "text": "Accept the deal, the blog can reach more people, so you'll get more publicity.",
@@ -580,7 +580,7 @@
     {
       "id": "hum_sem2_avoid",
       "text": "You're withdrawing further. A screenwriting professor spots your raw talent and offers to connect you with an entertainment agent that manages content for an unethical streaming platform.",
-      "quote": "\"FRANKL QUOTE (Purpose)\" - Viktor Frankl",
+      "quote": "\"It is wrong to use immoral means to attain moral ends.\" - Martin Luther King Jr. (214)",
       "choices": [
         {
           "text": "Pursue the agent and get the gig. That money will help a lot.",
@@ -623,8 +623,8 @@
     },
     {
       "id": "hum_sem3_avoid",
-      "text": "You've een drifting between classes and deadlines. A campus nonprofit asks for help writing grant applications, but showing up consistently feels impossible.",
-      "quote": "\"FRANKL QUOTE (Lack of Purpose)\" - Viktor Frankl",
+      "text": "You've been drifting between classes and deadlines. A campus nonprofit asks for help writing grant applications, but showing up consistently feels impossible.",
+      "quote": "\"The more one forgets himself... the more human he is and the more he actualizes himself.\" - Viktor E. Frankl",
       "choices": [
         {
           "text": "Force yourself to commit, then turn the applications into polished portfolio pieces for recruiting season.",
@@ -646,7 +646,7 @@
     {
       "id": "hum_sem3_rebel",
       "text": "Your independent journalism is reaching people. A prominent investigative news outlet wants your story on campus labor organizing but they want you to reveal your anonymous sources.",
-      "quote": "\"MLK QUOTE\" - Martin Luther King Jr.",
+      "quote": "\"It is wrong to use immoral means to attain moral ends.\" - Martin Luther King Jr. (214)",
       "choices": [
         {
           "text": "Name the source so that the story can run. The source gets expelled, but you get the rep.",
@@ -668,7 +668,7 @@
     {
       "id": "hum_sem4_conform",
       "text": "You have clout in media circles. A major news network offers a prestigious internship where you will frame poverty as a personal failing.",
-      "quote": "\"AFFLUENZA QUOTE\" - Affluenza Author.",
+      "quote": "\"The second piece of the pie... never tastes as good as the first.\" - Affluenza.",
       "choices": [
         {
           "text": "Accept. You absorb the framing until it feels like your own voice.",
@@ -712,7 +712,7 @@
     {
       "id": "hum_sem4_rebel",
       "text": "Your independent work has a loyal following. You uncover evidence that the university is ghost-writing positive editorials about itself and submitting them to the student newspaper under fake names.",
-      "quote": "\"MLK QUOTE\" - Martin Luther King Jr.",
+      "quote": "\"One day the South will recognize its real heroes.\" - Martin Luther King Jr. (214)",
       "choices": [
         {
           "text": "You can't lose your scholarship so you do keep the evidence to yourself.",
@@ -734,7 +734,7 @@
     {
       "id": "hum_sem5_conform",
       "text": "You're polished and employable. For your capstone project, your advisor pushes you toward a 'safe' academic analysis.",
-      "quote": "\"MARX QUOTE\" - Karl Marx",
+      "quote": "\"The human being is completely and unavoidably influenced by his surroundings.\" - Victor E. Frankl (65)",
       "choices": [
         {
           "text": "Write the safe project to guarantee that A, but you feel like you weren't true to yourself.",
@@ -756,7 +756,7 @@
     {
       "id": "hum_sem5_avoid",
       "text": "You spend most days skipping class and scrolling insta reels. To stay enrolled, you must declare a capstone project. A classmate lets you add your name to their work, giving you credit for doing nothing.",
-      "quote": "\"FRANKL QUOTE (Purpose)\" - Viktor Frankl",
+      "quote": "\"A man's concern, even in his despair over the unworthiness of his life is an existential disease...\" - Viktor E. Frankl",
       "choices": [
         {
           "text": "You take the credit and leverage the project's metrics to secure a lucrative interview with a corporate ad-tech firm.",
@@ -778,7 +778,7 @@
     {
       "id": "hum_sem5_rebel",
       "text": "Your housing displacement coverage gets traction. A real estate developer threatens legal action to silence your reporting. A media law clinic can defend you for free, but the case will consume so much time.",
-      "quote": "\"CARSON QUOTE\" - Carson",
+      "quote": "\"The most flagrant abuses go unchecked in both state and federal agencies.\" - Carson (304)",
       "choices": [
         {
           "text": "Retract the story to avoid the case altogether.",
@@ -800,7 +800,7 @@
     {
       "id": "hum_sem6_conform",
       "text": "A firm offers an internship writing SEO articles designed to spread health misinformation under the guise of wellness content, but the stipend is great",
-      "quote": "\"FRANKL QUOTE (Purpose)\" - Viktor Frankl",
+      "quote": "\"Have we fallen into a mesmerized state that makes us accept as inevitable that which is inferior or detrimental...\" - Carson (304)",
       "choices": [
         {
           "text": "Take the offer. You write a hundred articles undermining public health. You buy a nice apartment.",
@@ -822,7 +822,7 @@
     {
       "id": "hum_sem6_avoid",
       "text": "The pressure to secure a summer internship is suffocating. You've been dodging the career center, but a recruiter for a notorious firm for misinformation offers you a 'Sustainability PR' internship.",
-      "quote": "\"MLK QUOTE\" - Martin Luther King Jr.",
+      "quote": "\"Capitalism is a ... mere game, a competitive sport.\" - Max Weber (167).",
       "choices": [
         {
           "text": "The anxiety of being unemployed is too much, so yo take the internship convince yourself that you had to.",
@@ -844,7 +844,7 @@
     {
       "id": "hum_sem6_rebel",
       "text": "Your legal fight made you known among nonprofits. A small nonprofit journal offers you a staff position. The pay is next to none, but you have full ownership of your work.",
-      "quote": "\"FRANKL QUOTE (Purpose)\" - Viktor Frankl",
+      "quote": "\"A life whose meaning depends on such a happenstance... ultimately would not be worth living at all.\" - Viktor E. Frankl (115)",
       "choices": [
         {
           "text": "Turn it down. You need a livable wage. Take a corporate content strategy role instead.",
@@ -887,8 +887,8 @@
     },
     {
       "id": "hum_sem7_avoid",
-      "text": "The reality of graduation hits like a freight train. Outside your window, the quad is swarming with peers in sharp suits heading to the mega-corporate career fair. You have no job lined up, no capstone topic, and no plan. The academic safety net you've been coasting on is rapidly disintegrating.",
-      "quote": "\"We stand now where two roads diverge... The road we have long been traveling is deceptively easy, a smooth superhighway on which we progress with great speed, but at its end lies disaster.\" - Rachel Carson",
+      "text": "The reality of graduation hits like a freight train. Outside your window, the quad is swarming with peers in sharp suits heading to the mega-corporate career fair. You have no job lined up, no capstone topic, and no plan. The academic safety net you've been relying on is no more.",
+      "quote": "\"Life ultimately means taking the responsibility to find the right answer to its problems and fulfill the tasks which it constantly sets out for each individual.\" - Viktor E. Frankl (77)",
       "choices": [
         {
           "text": "Throw on a borrowed suit, sprint to the fair, and aggressively pitch yourself for a soulless B2B sales role at a firm just to feel secure.",
@@ -910,7 +910,7 @@
     {
       "id": "hum_sem7_rebel",
       "text": "Your work is honest and your integrity is intact. A large national publication offers you a staff job, but you'll have to sign away the rights to all your previous independent work, including your family displacement story.",
-      "quote": "\"FRANKL QUOTE (Purpose)\" - Viktor Frankl",
+      "quote": "\"Meaning... gives him capability to cope with suffering.\" - Viktor E. Frankl",
       "choices": [
         {
           "text": "You need the money, so you sell the rights. All of your work is no longer yours.",
@@ -932,7 +932,7 @@
     {
       "id": "hum_sem8_conform",
       "text": "You're a skilled writer with a comfortable career ahead of you. A first-year student shows you their raw, urgent, true piece of writing and asks if they should pursue this path.",
-      "quote": "\"MLK QUOTE\" - Martin Luther King Jr.",
+      "quote": "\"FRANKL QUOTE\" - Victor E. Frankl",
       "choices": [
         {
           "text": "Tell them to learn SEO, build a brand, and monetize. There's no point in doing something that won't help your career.",
@@ -954,7 +954,7 @@
     {
       "id": "hum_sem8_avoid",
       "text": "Graduation is tomorrow. The campus is buzzing with final celebrations and panicked goodbyes. You sit in your half-packed room, staring at a blank wall.",
-      "quote": "\"FRANKL QUOTE (Lack of Purpose)\" - Viktor Frankl",
+      "quote": "\"Boredom... causes more problems to solve than distress.\" - Viktor E. Frankl",
       "choices": [
         { 
           "text": "Put on your cap and gown. Walk across the stage and step into the void.", 
@@ -966,7 +966,7 @@
     {
       "id": "hum_sem8_rebel",
       "text": "Semester 8. Graduation. You have no staff job lined up, but your work has impacted the lives of many and you feel fulfilled. A media company gives you one final offer.",
-      "quote": "\"We are now faced with the fact that tomorrow is today. We are confronted with the fierce urgency of now.\" - Martin Luther King Jr.",
+      "quote": "\"Society must protect the robbed and punish the robber.\" - Martin Luther King Jr. (211)",
       "choices": [
         {
           "text": "Accept. You tell yourself that you'll try to change the company culture, but you'll slowly fall into their ways.",
@@ -993,13 +993,13 @@
         "if": "hidden.inner_peace < 20 && hidden.collateral_damage > 50",
         "title": "Trapped in the Iron Cage",
         "text": "10 Years Later: You have everything society told you to want. You are incredibly wealthy and highly respected. But your work has systematically harmed others, automated away jobs, and extracted resources without giving back. You stare at your massive bank account, completely alienated from your own life. The dangerous illusion worked.",
-        "quote": "Placeholder"
+        "quote": "The cloak should become an iron cage. - Max Weber"
       },
       {
         "if": "hidden.inner_peace >= 60 && hidden.lives_uplifted > 50",
         "title": "You Found Your Purpose",
         "text": "10 Years Later: Your resume is a mess. You never made the 30-under-30 list. But the systems you built empower people. You rejected the status quo, and while society punished you with lower pay and less prestige, you sleep soundly. You broke the illusion, and in doing so, you found out what actually matters.",
-        "quote": "Placeholder"
+        "quote": "He who has a why to live, can bear almost any how. - Viktor E. Frankl & Friedrich Nietzsche"
       },
       {
         "if": "hidden.inner_peace < 40 && hidden.lives_uplifted < 30 && hidden.collateral_damage < 30",
@@ -1011,7 +1011,7 @@
         "if": "default",
         "title": "The Choice Is Still Yours",
         "text": "10 Years Later: You compromised. You took some of the money, and you tried to do some good on the side. You are comfortable, but the tension between the societal illusion and your inner authenticity remains a daily battle.",
-        "quote": "Placeholder"
+        "quote": "Live as if you were living the second life and had acted as wrongly the first time as you are about to act now. - Viktor E. Frankl"
       }
     ]
   }
