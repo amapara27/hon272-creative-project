@@ -667,8 +667,8 @@
     },
     {
       "id": "hum_sem4_conform",
-      "text": "Junior Year. You have clout in media circles. A major news network offers a prestigious internship — writing chyrons and copy that frames poverty as a personal failing, never structural. It's the style guide.",
-      "quote": "\"A society in which consumption has to be artificially stimulated... is a society founded on trash and waste.\" - John de Graaf",
+      "text": "You have clout in media circles. A major news network offers a prestigious internship where you will frame poverty as a personal failing.",
+      "quote": "\"AFFLUENZA QUOTE\" - Affluenza Author.",
       "choices": [
         {
           "text": "Accept. You absorb the framing until it feels like your own voice.",
@@ -676,44 +676,56 @@
           "next_node": "hum_sem5_conform"
         },
         {
-          "text": "Accept the internship but produce nothing, paralyzed between compliance and conscience.",
+          "text": "Accept the internship but produce nothing, you're stuck between compliance an rejection",
           "stat_changes": { "visible": { "clout": -10, "resume": -10 }, "hidden": { "inner_peace": -10 } },
           "next_node": "hum_sem5_avoid"
         },
         {
-          "text": "Decline and instead embed yourself with a local community newspaper covering housing displacement.",
+          "text": "Decline and instead place yourself within a local community newspaper covering housing displacement.",
           "stat_changes": { "visible": { "money": -20, "clout": -20 }, "hidden": { "lives_uplifted": 25, "inner_peace": 30 } },
           "next_node": "hum_sem5_rebel"
         }
       ]
     },
-    {
+    {   
       "id": "hum_sem4_avoid",
-      "text": "Semester 4. Avoidance Node. (Routing back to main paths).",
-      "quote": "Placeholder",
+      "text": "You're forced to attend a mandatory career seminar for humanities majors. The keynote speaker is an alum who writes crisis PR for an oil company who says they're offering 'easy, high-paying summer internships'.",
+      "quote": "\"EICHMANN QUOTE.\" - Hannah Arendt",
       "choices": [
-        { "text": "Snap out of it and conform.", "stat_changes": {}, "next_node": "hum_sem5_conform" },
-        { "text": "Keep avoiding.", "stat_changes": {}, "next_node": "hum_sem5_avoid" },
-        { "text": "Wake up and rebel.", "stat_changes": {}, "next_node": "hum_sem5_rebel" }
+        {
+          "text": "Your resume is empty, but you still apply for the PR internship and write exactly what they want to hear.",
+          "stat_changes": { "visible": { "money": 25, "resume": 20 }, "hidden": { "collateral_damage": 20, "inner_peace": -25 } },
+          "next_node": "hum_sem5_conform"
+        },
+        {
+          "text": "Leave the seminar early to back to your dorm and sleep.",
+          "stat_changes": { "visible": { "resume": -10, "clout": -10 }, "hidden": { "inner_peace": -10 } },
+          "next_node": "hum_sem5_avoid"
+        },
+        {
+          "text": "Reject the corporate lifeline. Spend the night furiously applying to an unpaid fellowship at a civil rights archive instead.",
+          "stat_changes": { "visible": { "money": -10, "clout": -5 }, "hidden": { "lives_uplifted": 20, "inner_peace": 25 } },
+          "next_node": "hum_sem5_rebel"
+        }
       ]
     },
     {
       "id": "hum_sem4_rebel",
-      "text": "Semester 4. Junior Year. Your independent work has a loyal following. You uncover evidence that the university is ghost-writing positive editorials about itself and submitting them to the student newspaper under fake names.",
-      "quote": "\"There is something fundamentally wrong with treating the Earth as if it were a business in liquidation.\" - Herman Daly (via Suzuki)",
+      "text": "Your independent work has a loyal following. You uncover evidence that the university is ghost-writing positive editorials about itself and submitting them to the student newspaper under fake names.",
+      "quote": "\"MLK QUOTE\" - Martin Luther King Jr.",
       "choices": [
         {
-          "text": "Sit on the evidence. The university controls your scholarship review.",
+          "text": "You can't lose your scholarship so you do keep the evidence to yourself.",
           "stat_changes": { "visible": { "money": 10, "resume": 15 }, "hidden": { "collateral_damage": 20, "inner_peace": -30 } },
           "next_node": "hum_sem5_conform"
         },
         {
-          "text": "Do nothing with it. Save the files in a folder you never open.",
+          "text": "Give the evidence to your friend and let them decide how to deal with it.",
           "stat_changes": { "visible": { "clout": 0 }, "hidden": { "collateral_damage": 10, "inner_peace": -15 } },
           "next_node": "hum_sem5_avoid"
         },
         {
-          "text": "Publish the exposé. Risk your scholarship. The university issues a public apology.",
+          "text": "Go public with it. You risk your scholarship, but the university ends up offering an aploogy.",
           "stat_changes": { "visible": { "money": -20, "clout": -15 }, "hidden": { "lives_uplifted": 30, "inner_peace": 25 } },
           "next_node": "hum_sem5_rebel"
         }
@@ -721,21 +733,21 @@
     },
     {
       "id": "hum_sem5_conform",
-      "text": "Semester 5. You are polished and employable. For your senior project, your advisor pushes you toward a 'safe' academic analysis. You have a different story you need to tell — about your own family's history of displacement.",
-      "quote": "\"The worker is related to the product of his labor as to an alien object.\" - Karl Marx",
+      "text": "You're polished and employable. For your capstone project, your advisor pushes you toward a 'safe' academic analysis.",
+      "quote": "\"MARX QUOTE\" - Karl Marx",
       "choices": [
         {
-          "text": "Write the safe project. It gets top marks. Your own story stays buried.",
+          "text": "Write the safe project to guarantee that A, but you feel like you weren't true to yourself.",
           "stat_changes": { "visible": { "clout": 25, "resume": 25 }, "hidden": { "collateral_damage": 10, "inner_peace": -30 } },
           "next_node": "hum_sem6_conform"
         },
         {
-          "text": "Start your personal project, then abandon it halfway. Turn in something unfinished.",
+          "text": "Start your personal project, then abandon it halfway. Turn in something unfinished to get the job done.",
           "stat_changes": { "visible": { "resume": -20 }, "hidden": { "inner_peace": -15 } },
           "next_node": "hum_sem6_avoid"
         },
         {
-          "text": "Write the true story of your family's displacement. Your advisor gives you a C. It is the most important thing you have ever written.",
+          "text": "Write the true story of your family's displacement. Your professor gives you a C, but it's the most important thing you have ever written.",
           "stat_changes": { "visible": { "clout": -20, "resume": -20 }, "hidden": { "lives_uplifted": 20, "inner_peace": 35 } },
           "next_node": "hum_sem6_rebel"
         }
@@ -743,31 +755,43 @@
     },
     {
       "id": "hum_sem5_avoid",
-      "text": "Semester 5. Avoidance Node. (Routing back to main paths).",
-      "quote": "Placeholder",
+      "text": "You spend most days skipping class and scrolling insta reels. To stay enrolled, you must declare a capstone project. A classmate lets you add your name to their work, giving you credit for doing nothing.",
+      "quote": "\"FRANKL QUOTE (Purpose)\" - Viktor Frankl",
       "choices": [
-        { "text": "Snap out of it and conform.", "stat_changes": {}, "next_node": "hum_sem6_conform" },
-        { "text": "Keep avoiding.", "stat_changes": {}, "next_node": "hum_sem6_avoid" },
-        { "text": "Wake up and rebel.", "stat_changes": {}, "next_node": "hum_sem6_rebel" }
+        {
+          "text": "You take the credit and leverage the project's metrics to secure a lucrative interview with a corporate ad-tech firm.",
+          "stat_changes": { "visible": { "money": 20, "resume": 15 }, "hidden": { "collateral_damage": 20, "inner_peace": -20 } },
+          "next_node": "hum_sem6_conform"
+        },
+        {
+          "text": "Accept the free credit. Put your name on the title slide, skip the actual presentation, and go back to sleep.",
+          "stat_changes": { "visible": { "resume": 5, "clout": -10 }, "hidden": { "inner_peace": -15 } },
+          "next_node": "hum_sem6_avoid"
+        },
+        {
+          "text": "You refuse the easy out and scramble to propose a rigorous study on the psychological decay caused by ad-tech.",
+          "stat_changes": { "visible": { "resume": -15, "clout": -10 }, "hidden": { "lives_uplifted": 15, "inner_peace": 25 } },
+          "next_node": "hum_sem6_rebel"
+        }
       ]
     },
     {
       "id": "hum_sem5_rebel",
-      "text": "Semester 5. Your housing displacement coverage gets traction. A real estate developer threatens legal action to silence your reporting. A media law clinic can defend you for free — but the case will consume your academic life.",
-      "quote": "\"We are showering radioactive fallout... to kill insects, we are destroying the birds and the fishes.\" - Rachel Carson",
+      "text": "Your housing displacement coverage gets traction. A real estate developer threatens legal action to silence your reporting. A media law clinic can defend you for free, but the case will consume so much time.",
+      "quote": "\"CARSON QUOTE\" - Carson",
       "choices": [
         {
-          "text": "Retract the story. Issue a carefully worded apology. Move on.",
+          "text": "Retract the story to avoid the case altogether.",
           "stat_changes": { "visible": { "resume": 10, "clout": 10 }, "hidden": { "collateral_damage": 20, "inner_peace": -25 } },
           "next_node": "hum_sem6_conform"
         },
         {
-          "text": "Go silent. Delete your accounts. Disappear into your coursework.",
+          "text": "Go silent and focus on schoolwork.",
           "stat_changes": { "visible": { "clout": -15 }, "hidden": { "inner_peace": -15 } },
           "next_node": "hum_sem6_avoid"
         },
         {
-          "text": "Fight the legal threat. The case takes a year but the reporting stands. Tenant groups rally around you.",
+          "text": "Fight the legal threat with the clinic. The case takes a year, but you win.",
           "stat_changes": { "visible": { "money": -15, "resume": -10 }, "hidden": { "lives_uplifted": 30, "collateral_damage": -10, "inner_peace": 30 } },
           "next_node": "hum_sem6_rebel"
         }
@@ -775,11 +799,11 @@
     },
     {
       "id": "hum_sem6_conform",
-      "text": "Semester 6. Graduation looms. A content farm offers a full-time job writing SEO articles designed to spread health misinformation under the guise of wellness content. The salary is extraordinary.",
-      "quote": "\"The banality of evil... the terrifyingly normal adherence to the system.\" - Hannah Arendt",
+      "text": "A firm offers an internship writing SEO articles designed to spread health misinformation under the guise of wellness content, but the stipend is great",
+      "quote": "\"FRANKL QUOTE (Purpose)\" - Viktor Frankl",
       "choices": [
         {
-          "text": "Take the job. You write a hundred articles undermining public health. You buy a nice apartment.",
+          "text": "Take the offer. You write a hundred articles undermining public health. You buy a nice apartment.",
           "stat_changes": { "visible": { "money": 40, "resume": 15 }, "hidden": { "collateral_damage": 35, "inner_peace": -35 } },
           "next_node": "hum_sem7_conform"
         },
@@ -789,7 +813,7 @@
           "next_node": "hum_sem7_avoid"
         },
         {
-          "text": "Refuse. Spend the semester writing a reader's guide to identifying health misinformation, published for free.",
+          "text": "Decline. Spend the semester writing a reader's guide to identifying health misinformation and post it on your free blog.",
           "stat_changes": { "visible": { "money": -20, "clout": -15 }, "hidden": { "lives_uplifted": 30, "inner_peace": 30 } },
           "next_node": "hum_sem7_rebel"
         }
@@ -797,18 +821,30 @@
     },
     {
       "id": "hum_sem6_avoid",
-      "text": "Semester 6. Avoidance Node. (Routing back to main paths).",
-      "quote": "Placeholder",
+      "text": "The pressure to secure a summer internship is suffocating. You've been dodging the career center, but a recruiter for a notorious firm for misinformation offers you a 'Sustainability PR' internship.",
+      "quote": "\"MLK QUOTE\" - Martin Luther King Jr.",
       "choices": [
-        { "text": "Snap out of it and conform.", "stat_changes": {}, "next_node": "hum_sem7_conform" },
-        { "text": "Keep avoiding.", "stat_changes": {}, "next_node": "hum_sem7_avoid" },
-        { "text": "Wake up and rebel.", "stat_changes": {}, "next_node": "hum_sem7_rebel" }
+        {
+          "text": "The anxiety of being unemployed is too much, so yo take the internship convince yourself that you had to.",
+          "stat_changes": { "visible": { "money": 30, "resume": 25, "clout": 15 }, "hidden": { "collateral_damage": 30, "inner_peace": -25 } },
+          "next_node": "hum_sem7_conform"
+        },
+        {
+          "text": "Politely take their business card, throw it in the trash the moment they look away, and hop on the PS5 back at your dorm",
+          "stat_changes": { "visible": { "resume": -10, "clout": -5 }, "hidden": { "inner_peace": -10 } },
+          "next_node": "hum_sem7_avoid"
+        },
+        {
+          "text": "You publicly reject the offer and spend the weekend organizing a boycott of the brand, getting blacklisted by the career center.",
+          "stat_changes": { "visible": { "money": -15, "resume": -25, "clout": -10 }, "hidden": { "lives_uplifted": 25, "inner_peace": 30 } },
+          "next_node": "hum_sem7_rebel"
+        }
       ]
     },
     {
       "id": "hum_sem6_rebel",
-      "text": "Semester 6. Your legal fight made you known in press freedom circles but toxic to mainstream media employers. A small nonprofit journal offers you a staff position — the pay is poverty level, but the work is fully independent.",
-      "quote": "\"When we speak of nature, we are speaking of ourselves.\" - David Suzuki",
+      "text": "Your legal fight made you known among nonprofits. A small nonprofit journal offers you a staff position. The pay is next to none, but you have full ownership of your work.",
+      "quote": "\"FRANKL QUOTE (Purpose)\" - Viktor Frankl",
       "choices": [
         {
           "text": "Turn it down. You need a livable wage. Take a corporate content strategy role instead.",
@@ -829,21 +865,21 @@
     },
     {
       "id": "hum_sem7_conform",
-      "text": "Semester 7. You are polished and well-compensated. A junior classmate has written a devastating, important piece about sexual harassment in the department. No publication will touch it. They ask you to use your connections to help them publish it.",
-      "quote": "\"Everything can be taken from a man but one thing: the last of the human freedoms—to choose one's attitude.\" - Viktor Frankl",
+      "text": "Your resume is polished and you've been well-compensated. A junior classmate has written a devastating, important piece about sexual harassment in the departmen and they ask you to use your connections to help them publish it.",
+      "quote": "\"EICHMANN QUOTE.\" - Hannah Arendt",
       "choices": [
         {
-          "text": "Decline. One of the people named in the piece is a powerful contact of yours.",
+          "text": "Decline the request because you need a referral from someone named in the piece.",
           "stat_changes": { "visible": { "clout": 10, "money": 10 }, "hidden": { "collateral_damage": 20, "inner_peace": -25 } },
           "next_node": "hum_sem8_conform"
         },
         {
-          "text": "Promise to help, then do nothing. Ghost them.",
+          "text": "Offer to help, but stall for a while.",
           "stat_changes": { "visible": { "clout": -5 }, "hidden": { "collateral_damage": 10, "inner_peace": -15 } },
           "next_node": "hum_sem8_avoid"
         },
         {
-          "text": "Use every connection you have to get it published. Burn the powerful contact. The piece changes policy.",
+          "text": "Use every connection you have to get it published. You lose that referral, but gain something more.",
           "stat_changes": { "visible": { "clout": -25, "money": -10 }, "hidden": { "lives_uplifted": 35, "inner_peace": 35 } },
           "next_node": "hum_sem8_rebel"
         }
@@ -851,31 +887,43 @@
     },
     {
       "id": "hum_sem7_avoid",
-      "text": "Semester 7. Avoidance Node. (Routing back to main paths).",
-      "quote": "Placeholder",
+      "text": "The reality of graduation hits like a freight train. Outside your window, the quad is swarming with peers in sharp suits heading to the mega-corporate career fair. You have no job lined up, no capstone topic, and no plan. The academic safety net you've been coasting on is rapidly disintegrating.",
+      "quote": "\"We stand now where two roads diverge... The road we have long been traveling is deceptively easy, a smooth superhighway on which we progress with great speed, but at its end lies disaster.\" - Rachel Carson",
       "choices": [
-        { "text": "Snap out of it and conform.", "stat_changes": {}, "next_node": "hum_sem8_conform" },
-        { "text": "Keep avoiding.", "stat_changes": {}, "next_node": "hum_sem8_avoid" },
-        { "text": "Wake up and rebel.", "stat_changes": {}, "next_node": "hum_sem8_rebel" }
+        {
+          "text": "Throw on a borrowed suit, sprint to the fair, and aggressively pitch yourself for a soulless B2B sales role at a firm just to feel secure.",
+          "stat_changes": { "visible": { "money": 25, "resume": 20, "clout": 10 }, "hidden": { "collateral_damage": 25, "inner_peace": -30 } },
+          "next_node": "hum_sem8_conform"
+        },
+        {
+          "text": "Close the blinds. Turn up your music to drown out the anxiety, crawl back into bed, and pretend the future doesn't exist.",
+          "stat_changes": { "visible": { "resume": -15, "clout": -15 }, "hidden": { "inner_peace": -15 } },
+          "next_node": "hum_sem8_avoid"
+        },
+        {
+          "text": "Walk out to the quad, but not to interview. You spend the entire day handing out flyers exposing the environmental and labor violations of the top firms recruiting there.",
+          "stat_changes": { "visible": { "money": -10, "resume": -20, "clout": -15 }, "hidden": { "lives_uplifted": 30, "inner_peace": 25, "collateral_damage": -10 } },
+          "next_node": "hum_sem8_rebel"
+        }
       ]
     },
     {
       "id": "hum_sem7_rebel",
-      "text": "Semester 7. Your work is honest and your integrity intact. A large national publication offers you a staff job — on the condition that you sign away the rights to all your previous independent work, including your family displacement story.",
-      "quote": "\"Action on behalf of life transforms. Because the relationship between self and the world is reciprocal.\" - Robin Wall Kimmerer",
+      "text": "Your work is honest and your integrity is intact. A large national publication offers you a staff job, but you'll have to sign away the rights to all your previous independent work, including your family displacement story.",
+      "quote": "\"FRANKL QUOTE (Purpose)\" - Viktor Frankl",
       "choices": [
         {
-          "text": "Sign the rights away. The platform is worth it. Your family's story is now owned by a media conglomerate.",
+          "text": "You need the money, so you sell the rights. All of your work is no longer yours.",
           "stat_changes": { "visible": { "money": 35, "clout": 25 }, "hidden": { "collateral_damage": 10, "inner_peace": -35 } },
           "next_node": "hum_sem8_conform"
         },
         {
-          "text": "Neither sign nor decline. Let the offer sit unread for months.",
+          "text": "Let the offer sit in your inbox for a few weeks.",
           "stat_changes": { "visible": { "money": -5 }, "hidden": { "inner_peace": -10 } },
           "next_node": "hum_sem8_avoid"
         },
         {
-          "text": "Refuse the rights clause. Walk away from the offer. Publish your family story as an open-access piece that spreads widely.",
+          "text": "Walk away from the offer. Publish your family story on the internet.",
           "stat_changes": { "visible": { "money": -15, "clout": -15 }, "hidden": { "lives_uplifted": 20, "inner_peace": 40 } },
           "next_node": "hum_sem8_rebel"
         }
@@ -883,21 +931,21 @@
     },
     {
       "id": "hum_sem8_conform",
-      "text": "Semester 8. Graduation. You are a skilled writer with a comfortable career ahead of you. A first-year student shows you their raw, urgent, true piece of writing and asks if they should pursue this path.",
-      "quote": "\"The illusion of security is the greatest danger.\" - Game Thesis",
+      "text": "You're a skilled writer with a comfortable career ahead of you. A first-year student shows you their raw, urgent, true piece of writing and asks if they should pursue this path.",
+      "quote": "\"MLK QUOTE\" - Martin Luther King Jr.",
       "choices": [
         {
-          "text": "Tell them to learn SEO, build a brand, and monetize. Kill the urgency before it kills them.",
+          "text": "Tell them to learn SEO, build a brand, and monetize. There's no point in doing something that won't help your career.",
           "stat_changes": { "visible": { "clout": 10 }, "hidden": { "collateral_damage": 20, "inner_peace": -20 } },
           "next_node": "epilogue_trigger"
         },
         {
-          "text": "Tell them you don't know. Shrug. Walk to your own graduation.",
+          "text": "Tell them you don't know. Shrug. Walk to your graduation.",
           "stat_changes": { "visible": { "clout": -5 }, "hidden": { "inner_peace": -10 } },
           "next_node": "epilogue_trigger"
         },
         {
-          "text": "Tell them their story is the most important thing in the world and someone needs to tell it. Make sure it's them.",
+          "text": "Tell them their story is the most important thing in the world and someone needs to tell it. Staying true to yourself is key.",
           "stat_changes": { "visible": { "clout": -10 }, "hidden": { "lives_uplifted": 25, "inner_peace": 20 } },
           "next_node": "epilogue_trigger"
         }
@@ -905,19 +953,23 @@
     },
     {
       "id": "hum_sem8_avoid",
-      "text": "Semester 8. Graduation is tomorrow. You spent four years with the gift of narrative and said almost nothing with it.",
-      "quote": "Placeholder",
+      "text": "Graduation is tomorrow. The campus is buzzing with final celebrations and panicked goodbyes. You sit in your half-packed room, staring at a blank wall.",
+      "quote": "\"FRANKL QUOTE (Lack of Purpose)\" - Viktor Frankl",
       "choices": [
-        { "text": "Accept your fate.", "stat_changes": {}, "next_node": "epilogue_trigger" }
+        { 
+          "text": "Put on your cap and gown. Walk across the stage and step into the void.", 
+          "stat_changes": { "visible": {}, "hidden": { "inner_peace": -20, "collateral_damage": 10 } }, 
+          "next_node": "epilogue_trigger" 
+        }
       ]
     },
     {
       "id": "hum_sem8_rebel",
-      "text": "Semester 8. Graduation. You have no staff job lined up, but your work has mattered. A media conglomerate makes one final offer: a high salary to run their 'social impact' content vertical, which will give ethical cover to their other exploitative divisions.",
+      "text": "Semester 8. Graduation. You have no staff job lined up, but your work has impacted the lives of many and you feel fulfilled. A media company gives you one final offer.",
       "quote": "\"We are now faced with the fact that tomorrow is today. We are confronted with the fierce urgency of now.\" - Martin Luther King Jr.",
       "choices": [
         {
-          "text": "Accept. You'll try to do real work from the inside. You know how this ends.",
+          "text": "Accept. You tell yourself that you'll try to change the company culture, but you'll slowly fall into their ways.",
           "stat_changes": { "visible": { "money": 45, "clout": 20 }, "hidden": { "collateral_damage": 25, "inner_peace": -35 } },
           "next_node": "epilogue_trigger"
         },
@@ -927,7 +979,7 @@
           "next_node": "epilogue_trigger"
         },
         {
-          "text": "Decline. Start an independent media cooperative with three other graduating students who feel the same.",
+          "text": "Decline. Start an independent media cooperative with three other graduating students who feel the same way about making a real impact in the world.",
           "stat_changes": { "visible": { "money": -15, "clout": -10 }, "hidden": { "lives_uplifted": 30, "inner_peace": 40 } },
           "next_node": "epilogue_trigger"
         }
@@ -939,25 +991,25 @@
     "conditions": [
       {
         "if": "hidden.inner_peace < 20 && hidden.collateral_damage > 50",
-        "title": "The Iron Cage Achieved",
+        "title": "Trapped in the Iron Cage",
         "text": "10 Years Later: You have everything society told you to want. You are incredibly wealthy and highly respected. But your work has systematically harmed others, automated away jobs, and extracted resources without giving back. You stare at your massive bank account, completely alienated from your own life. The dangerous illusion worked.",
         "quote": "Placeholder"
       },
       {
         "if": "hidden.inner_peace >= 60 && hidden.lives_uplifted > 50",
-        "title": "Authentic Resistance",
+        "title": "You Found Your Purpose",
         "text": "10 Years Later: Your resume is a mess. You never made the 30-under-30 list. But the systems you built empower people. You rejected the status quo, and while society punished you with lower pay and less prestige, you sleep soundly. You broke the illusion, and in doing so, you found out what actually matters.",
         "quote": "Placeholder"
       },
       {
         "if": "hidden.inner_peace < 40 && hidden.lives_uplifted < 30 && hidden.collateral_damage < 30",
-        "title": "The Apathetic Drift",
+        "title": "You Wasted The Most Important Years Of Your Life",
         "text": "10 Years Later: You avoided doing evil, but you also avoided doing good. You coasted through the system, neither conforming deeply nor rebelling meaningfully. You escaped the worst of the corporate machine, but you failed to find your authentic purpose.",
         "quote": "Placeholder"
       },
       {
         "if": "default",
-        "title": "The Mixed Reality",
+        "title": "The Choice Is Still Yours",
         "text": "10 Years Later: You compromised. You took some of the money, and you tried to do some good on the side. You are comfortable, but the tension between the societal illusion and your inner authenticity remains a daily battle.",
         "quote": "Placeholder"
       }
