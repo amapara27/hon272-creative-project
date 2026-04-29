@@ -163,7 +163,7 @@ if(epilogue) {
   return (
     <div className="container">
       <header className="game-header scene-enter">
-        <h1 className="game-title">The Illusion of Security</h1>
+        <h1 className="game-title">Choice University</h1>
         <p className="timeline-pill">{getTimelineLabel()}</p>
       </header>
 
