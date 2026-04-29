@@ -1,12 +1,10 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 
 import gameData from './gameData.json';
 
 function App() {
+  const vStatOrder = ['money', 'clout', 'resume'];
   
   // initial states
   const [node, setNode] = useState('start');
@@ -16,6 +14,25 @@ function App() {
 
   // first scenario
   const scenario = gameData.nodes.find(n => n.id === node);
+
+  const vStatChanges = (choice) => {
+    const vChanges = choice.stat_changes?.visible;
+
+    if (!vChanges) {
+      return [];
+    }
+
+    return vStatOrder
+      .filter((statKey) => typeof vChanges[statKey] === 'number' && vChanges[statKey] !== 0)
+      .map((statKey) => {
+        const value = vChanges[statKey];
+        return {
+          key: statKey,
+          label: `${value > 0 ? '+' : ''}${value} ${statKey}`,
+          className: value > 0 ? 'delta-positive' : 'delta-negative',
+        };
+      });
+  };
 
   // choice handler function
   const handleChoice = (choice) => {
@@ -84,7 +101,7 @@ if(epilogue) {
     
     return (
       <div className="container">
-        <div className="epilogue-screen">
+        <div className="epilogue-screen scene-enter">
           <h1 className="title">GRADUATION DAY</h1>
           <h2 className="subtitle">{finalStory.title}</h2>
           <p className="scenario-text">{finalStory.text}</p>
@@ -102,6 +119,10 @@ if(epilogue) {
 
   return (
     <div className="container">
+      <header className="game-header scene-enter">
+        <h1 className="game-title">The Illusion of Security</h1>
+      </header>
+
       {/* illusion stat dashboard */}
       <div className="dashboard">
         <div className="stat">Money: {vStats.money}</div>
@@ -110,7 +131,7 @@ if(epilogue) {
       </div>
 
       {/* game content */}
-      <div className="game-content">
+      <div className="game-content scene-enter" key={node}>
         <p className="scenario-text">{scenario.text}</p>
         
         {/* hides placeholders */}
@@ -120,15 +141,31 @@ if(epilogue) {
         
         {/* choices */}
         <div className="choices-container">
-          {scenario.choices.map((choice, index) => (
-            <button 
-              key={index} 
-              onClick={() => handleChoice(choice)}
-              className="choice-btn"
-            >
-              {choice.text}
-            </button>
-          ))}
+          {scenario.choices.map((choice, index) => {
+            const deltas = vStatChanges(choice);
+
+            return (
+              <button 
+                key={index} 
+                onClick={() => handleChoice(choice)}
+                className="choice-btn choice-enter"
+              >
+                {choice.text}
+                {deltas.length > 0 && (
+                  <span className="choice-delta">
+                    {' ('}
+                    {deltas.map((delta, deltaIndex) => (
+                      <span key={delta.key} className={delta.className}>
+                        {delta.label}
+                        {deltaIndex < deltas.length - 1 ? ', ' : ''}
+                      </span>
+                    ))}
+                    {')'}
+                  </span>
+                )}
+              </button>
+            );
+          })}
         </div>
       </div>
     </div>
