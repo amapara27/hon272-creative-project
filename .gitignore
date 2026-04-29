@@ -1,6 +1,5 @@
 cli
 
 app/node_modules
-app/src/gameData.json
 
 __pycache__

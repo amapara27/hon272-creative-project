@@ -1,0 +1,940 @@
+{
+  "gameMetadata": {
+    "title": "The Illusion of Success",
+    "description": "A 4-year university journey navigating the tension between societal expectations and authentic purpose.",
+    "startingStats": {
+      "visible": { "money": 30, "clout": 30, "resume": 30 },
+      "hidden": { "collateral_damage": 10, "lives_uplifted": 10, "inner_peace": 50 }
+    }
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "text": "Welcome to your freshman year. The next four years will dictate your future. Before the grind begins, you must declare your major. This choice will define the expectations society places upon you.",
+      "quote": "\"The perceived security of the status quo is a dangerous illusion.\" - Game Thesis",
+      "choices": [
+        {
+          "text": "Engineering - Chase the tech boom and build the infrastructure of tomorrow.",
+          "stat_changes": { "visible": { "money": 20, "resume": 15 }, "hidden": { "collateral_damage": 5, "inner_peace": -5 } },
+          "next_node": "engr_sem1"
+        },
+        {
+          "text": "Humanities - The pursuit of history, narrative, and societal critique.",
+          "stat_changes": { "visible": { "money": -15, "resume": -10 }, "hidden": { "lives_uplifted": 5, "inner_peace": 20 } },
+          "next_node": "hum_sem1"
+        }
+      ]
+    },
+
+    {
+      "id": "engr_sem1",
+      "text": "Semester 1. Your introductory engineering class is designed to weed people out. Everyone is already applying for summer internships. The pressure to stand out is immediate and suffocating.",
+      "quote": "\"The worker becomes all the poorer the more wealth he produces.\" - Karl Marx",
+      "choices": [
+        {
+          "text": "Cheat on the final project using a senior's old code to ensure an A.",
+          "stat_changes": { "visible": { "resume": 15, "clout": 10 }, "hidden": { "collateral_damage": 15, "inner_peace": -20 } },
+          "next_node": "engr_sem2_conform"
+        },
+        {
+          "text": "Skip the internship grind. Just pass the class and play video games.",
+          "stat_changes": { "visible": { "resume": -10, "clout": -10 }, "hidden": { "inner_peace": -5, "lives_uplifted": 0 } },
+          "next_node": "engr_sem2_avoid"
+        },
+        {
+          "text": "Take a lower grade to build a small, open-source tool for a local charity.",
+          "stat_changes": { "visible": { "resume": -5, "clout": -15 }, "hidden": { "lives_uplifted": 20, "inner_peace": 15 } },
+          "next_node": "engr_sem2_rebel"
+        }
+      ]
+    },
+    {
+      "id": "engr_sem2_conform",
+      "text": "Semester 2. You are trapped in the 'Iron Cage' of high achievement. You scored a prestigious interview, but the company builds addictive social media algorithms. Your peers are jealous.",
+      "quote": "\"The Puritan wanted to work in calling; we are forced to do so.\" - Max Weber",
+      "choices": [
+        {
+          "text": "Ace the interview. Optimize the algorithm for maximum user retention.",
+          "stat_changes": { "visible": { "money": 30, "resume": 20 }, "hidden": { "collateral_damage": 25, "inner_peace": -20 } },
+          "next_node": "engr_sem3_conform"
+        },
+        {
+          "text": "Show up unprepared and bomb it intentionally to escape the pressure.",
+          "stat_changes": { "visible": { "money": -10, "clout": -15 }, "hidden": { "inner_peace": 5 } },
+          "next_node": "engr_sem3_avoid"
+        },
+        {
+          "text": "Use the interview to question their ethics. You get blacklisted.",
+          "stat_changes": { "visible": { "money": -20, "resume": -15 }, "hidden": { "lives_uplifted": 10, "inner_peace": 25 } },
+          "next_node": "engr_sem3_rebel"
+        }
+      ]
+    },
+    {
+      "id": "engr_sem2_rebel",
+      "text": "Semester 2. Your open-source project was mocked by your peers for 'lacking ambition.' You are offered a chance to join a massive hackathon team, but their project is a predatory crypto token.",
+      "quote": "\"Human progress never rolls in on wheels of inevitability.\" - Martin Luther King Jr.",
+      "choices": [
+        {
+          "text": "Give in. Join the team for the prize money and resume boost.",
+          "stat_changes": { "visible": { "money": 20, "clout": 20 }, "hidden": { "collateral_damage": 15, "inner_peace": -15 } },
+          "next_node": "engr_sem3_conform"
+        },
+        {
+          "text": "Ignore the hackathon entirely and sleep through the weekend.",
+          "stat_changes": { "visible": { "resume": -10, "clout": -10 }, "hidden": { "inner_peace": -5 } },
+          "next_node": "engr_sem3_avoid"
+        },
+        {
+          "text": "Form a rival team to build a decentralized voting app. You lose the competition.",
+          "stat_changes": { "visible": { "resume": -5, "clout": -15 }, "hidden": { "lives_uplifted": 15, "inner_peace": 20 } },
+          "next_node": "engr_sem3_rebel"
+        }
+      ]
+    },
+    {
+      "id": "engr_sem2_avoid",
+      "text": "Semester 2. Coasting is catching up to you. You are alienated from the work and your peers. A professor offers you a spot in a research lab, but it requires grueling, uncredited hours.",
+      "quote": "\"He who has a why to live for can bear almost any how.\" - Viktor Frankl",
+      "choices": [
+        {
+          "text": "Take the lab spot and ruthlessly steal a grad student's data to publish first.",
+          "stat_changes": { "visible": { "resume": 30, "clout": 20 }, "hidden": { "collateral_damage": 20, "inner_peace": -25 } },
+          "next_node": "engr_sem3_conform"
+        },
+        {
+          "text": "Decline the offer. Keep doing the bare minimum.",
+          "stat_changes": { "visible": { "resume": -15, "clout": -15 }, "hidden": { "inner_peace": -10 } },
+          "next_node": "engr_sem3_avoid"
+        },
+        {
+          "text": "Take the lab spot, but insist on open-sourcing the data for public good.",
+          "stat_changes": { "visible": { "clout": -10, "resume": 5 }, "hidden": { "lives_uplifted": 20, "inner_peace": 15 } },
+          "next_node": "engr_sem3_rebel"
+        }
+      ]
+    },
+    {
+      "id": "engr_sem3_conform",
+      "text": "Semester 3. You are a rising star. The prestige is intoxicating. You are asked to write a script that scrapes private user data for a university marketing campaign. It's standard practice.",
+      "quote": "\"The sad truth is that most evil is done by people who never make up their minds to be good or evil.\" - Hannah Arendt",
+      "choices": [
+        {
+          "text": "Write the script perfectly. The university rewards you with a massive grant.",
+          "stat_changes": { "visible": { "money": 30, "clout": 25 }, "hidden": { "collateral_damage": 30, "inner_peace": -20 } },
+          "next_node": "engr_sem4_conform"
+        },
+        {
+          "text": "Outsource the work to a cheaper student and take the credit.",
+          "stat_changes": { "visible": { "resume": 10 }, "hidden": { "collateral_damage": 10, "inner_peace": -10 } },
+          "next_node": "engr_sem4_avoid"
+        },
+        {
+          "text": "Refuse and report the privacy violation. You lose your grant and status.",
+          "stat_changes": { "visible": { "money": -30, "clout": -35 }, "hidden": { "lives_uplifted": 25, "inner_peace": 30 } },
+          "next_node": "engr_sem4_rebel"
+        }
+      ]
+    },
+    {
+      "id": "engr_sem3_avoid",
+      "text": "Semester 3. You are floating through the year. You get grouped with highly motivated students for a major project. They want to build an AI that writes college application essays for rich kids.",
+      "quote": "\"A society in which consumption has to be artificially stimulated is a society founded on trash and waste.\" - John de Graaf",
+      "choices": [
+        {
+          "text": "Step up, write the core logic, and use it to launch a profitable startup.",
+          "stat_changes": { "visible": { "money": 35, "resume": 20 }, "hidden": { "collateral_damage": 25, "inner_peace": -25 } },
+          "next_node": "engr_sem4_conform"
+        },
+        {
+          "text": "Let them do all the work while you just put your name on it.",
+          "stat_changes": { "visible": { "resume": 10 }, "hidden": { "inner_peace": -10 } },
+          "next_node": "engr_sem4_avoid"
+        },
+        {
+          "text": "Hijack the project and turn it into a tool that detects AI plagiarism instead.",
+          "stat_changes": { "visible": { "money": -15, "clout": -10 }, "hidden": { "lives_uplifted": 20, "inner_peace": 25 } },
+          "next_node": "engr_sem4_rebel"
+        }
+      ]
+    },
+    {
+      "id": "engr_sem3_rebel",
+      "text": "Semester 3. You are socially isolated but ethically grounded. A local grassroots organization asks you to build a system to track corporate pollution, but it pays nothing and will take all your time.",
+      "quote": "\"We are caught in an inescapable network of mutuality.\" - Martin Luther King Jr.",
+      "choices": [
+        {
+          "text": "Abandon them. Take a lucrative freelance gig building a crypto trading bot instead.",
+          "stat_changes": { "visible": { "money": 25, "resume": 15 }, "hidden": { "collateral_damage": 15, "inner_peace": -25 } },
+          "next_node": "engr_sem4_conform"
+        },
+        {
+          "text": "Tell them you are too busy and do neither.",
+          "stat_changes": { "visible": { "money": 0 }, "hidden": { "inner_peace": -5 } },
+          "next_node": "engr_sem4_avoid"
+        },
+        {
+          "text": "Commit to the pollution tracker. Your grades tank, but the tool exposes a major leak.",
+          "stat_changes": { "visible": { "resume": -15, "money": -10 }, "hidden": { "lives_uplifted": 30, "collateral_damage": -10, "inner_peace": 25 } },
+          "next_node": "engr_sem4_rebel"
+        }
+      ]
+    },
+    {
+      "id": "engr_sem4_conform",
+      "text": "Semester 4. Junior Year. The 'Affluenza' has set in. You are obsessed with your starting salary. A defense contractor offers you a massive signing bonus to optimize drone targeting systems.",
+      "quote": "\"A society in which consumption has to be artificially stimulated... is a society founded on trash and waste.\" - John de Graaf",
+      "choices": [
+        {
+          "text": "Sign the contract. You are officially set for life. You try not to think about the targets.",
+          "stat_changes": { "visible": { "money": 40, "clout": 30 }, "hidden": { "collateral_damage": 40, "inner_peace": -40 } },
+          "next_node": "engr_sem5_conform"
+        },
+        {
+          "text": "Ghost the recruiter. You can't face the decision.",
+          "stat_changes": { "visible": { "clout": -10 }, "hidden": { "inner_peace": -5 } },
+          "next_node": "engr_sem5_avoid"
+        },
+        {
+          "text": "Tear up the contract. You publicly pivot to an underfunded green-tech startup.",
+          "stat_changes": { "visible": { "money": -40, "clout": -20 }, "hidden": { "lives_uplifted": 20, "inner_peace": 35 } },
+          "next_node": "engr_sem5_rebel"
+        }
+      ]
+    },
+    {
+      "id": "engr_sem4_avoid",
+      "text": "Semester 4. Junior Year. You are paralyzed by apathy. The engineering career fair is happening on campus, and the pressure to have a shiny resume is causing you physical anxiety.",
+      "quote": "\"The illusion of security is the greatest danger.\" - Game Thesis",
+      "choices": [
+        {
+          "text": "Lie on your resume and charm your way into a high-paying tech job.",
+          "stat_changes": { "visible": { "money": 30, "clout": 20 }, "hidden": { "collateral_damage": 15, "inner_peace": -25 } },
+          "next_node": "engr_sem5_conform"
+        },
+        {
+          "text": "Skip the career fair and sleep in.",
+          "stat_changes": { "visible": { "clout": -15, "resume": -10 }, "hidden": { "inner_peace": -10 } },
+          "next_node": "engr_sem5_avoid"
+        },
+        {
+          "text": "Go to the fair, but only hand resumes to local non-profits. They pay minimum wage.",
+          "stat_changes": { "visible": { "money": -20, "clout": -20 }, "hidden": { "lives_uplifted": 15, "inner_peace": 20 } },
+          "next_node": "engr_sem5_rebel"
+        }
+      ]
+    },
+    {
+      "id": "engr_sem4_rebel",
+      "text": "Semester 4. Junior Year. You are broke and your resume looks 'unconventional.' You discover a critical flaw in your university's cybersecurity that exposes student medical records.",
+      "quote": "\"There is something fundamentally wrong with treating the Earth as if it were a business in liquidation.\" - Herman Daly (via Suzuki)",
+      "choices": [
+        {
+          "text": "Blackmail the university for a guaranteed tech internship.",
+          "stat_changes": { "visible": { "money": 20, "resume": 30 }, "hidden": { "collateral_damage": 30, "inner_peace": -40 } },
+          "next_node": "engr_sem5_conform"
+        },
+        {
+          "text": "Ignore the flaw. It's not your problem.",
+          "stat_changes": { "visible": { "clout": 0 }, "hidden": { "collateral_damage": 15, "inner_peace": -15 } },
+          "next_node": "engr_sem5_avoid"
+        },
+        {
+          "text": "Quietly patch the flaw for free, taking zero credit to protect the students.",
+          "stat_changes": { "visible": { "clout": -5, "resume": -5 }, "hidden": { "lives_uplifted": 25, "inner_peace": 20 } },
+          "next_node": "engr_sem5_rebel"
+        }
+      ]
+    },
+    {
+      "id": "engr_sem5_conform",
+      "text": "Semester 5. You are burned out, running purely on caffeine and societal validation. For your senior capstone, your team wants to build an AI that automates away entry-level university jobs.",
+      "quote": "\"The worker is related to the product of his labor as to an alien object.\" - Karl Marx",
+      "choices": [
+        {
+          "text": "Lead the project. The administration loves it. Staff members are fired.",
+          "stat_changes": { "visible": { "clout": 30, "resume": 30 }, "hidden": { "collateral_damage": 35, "inner_peace": -30 } },
+          "next_node": "engr_sem6_conform"
+        },
+        {
+          "text": "Let your team do all the work while you focus on job hunting.",
+          "stat_changes": { "visible": { "money": 10 }, "hidden": { "collateral_damage": 15, "inner_peace": -10 } },
+          "next_node": "engr_sem6_avoid"
+        },
+        {
+          "text": "Sabotage your own project from the inside to protect the workers' jobs.",
+          "stat_changes": { "visible": { "clout": -40, "resume": -30 }, "hidden": { "lives_uplifted": 30, "inner_peace": 40 } },
+          "next_node": "engr_sem6_rebel"
+        }
+      ]
+    },
+    {
+      "id": "engr_sem5_avoid",
+      "text": "Semester 5. You are deeply disengaged. You get assigned to maintain legacy code for the university library system. It is boring, mind-numbing work.",
+      "quote": "\"The banality of evil... the terrifyingly normal adherence to the system.\" - Hannah Arendt",
+      "choices": [
+        {
+          "text": "Automate the library system to charge students predatory late fees to boost your metrics.",
+          "stat_changes": { "visible": { "resume": 25, "money": 15 }, "hidden": { "collateral_damage": 20, "inner_peace": -20 } },
+          "next_node": "engr_sem6_conform"
+        },
+        {
+          "text": "Do the absolute bare minimum to keep the servers running.",
+          "stat_changes": { "visible": { "resume": -5 }, "hidden": { "inner_peace": -5 } },
+          "next_node": "engr_sem6_avoid"
+        },
+        {
+          "text": "Rewrite the code to eliminate paywalls and make all academic journals free for students.",
+          "stat_changes": { "visible": { "clout": -20, "resume": -15 }, "hidden": { "lives_uplifted": 25, "inner_peace": 20 } },
+          "next_node": "engr_sem6_rebel"
+        }
+      ]
+    },
+    {
+      "id": "engr_sem5_rebel",
+      "text": "Semester 5. Your resistance is exhausting, but your mind is clear. Your capstone requires massive computing power. The 'standard' way is to use a server farm that consumes horrific amounts of energy.",
+      "quote": "\"We are showering radioactive fallout... to kill insects, we are destroying the birds and the fishes.\" - Rachel Carson",
+      "choices": [
+        {
+          "text": "Give in and use the server farm. You need the grade to graduate.",
+          "stat_changes": { "visible": { "resume": 20, "clout": 10 }, "hidden": { "collateral_damage": 20, "inner_peace": -20 } },
+          "next_node": "engr_sem6_conform"
+        },
+        {
+          "text": "Change your project to something trivial to avoid the issue.",
+          "stat_changes": { "visible": { "resume": -15 }, "hidden": { "inner_peace": -5 } },
+          "next_node": "engr_sem6_avoid"
+        },
+        {
+          "text": "Re-architect your entire project to run locally on low-power embedded microcontrollers.",
+          "stat_changes": { "visible": { "resume": -10, "clout": -10 }, "hidden": { "collateral_damage": -15, "inner_peace": 25 } },
+          "next_node": "engr_sem6_rebel"
+        }
+      ]
+    },
+    {
+      "id": "engr_sem6_conform",
+      "text": "Semester 6. Final exams. You have a massive job offer waiting, contingent on a perfect GPA. You discover the professor's exam key is circulating on a private server.",
+      "quote": "\"The banality of evil... the terrifyingly normal adherence to the system.\" - Hannah Arendt",
+      "choices": [
+        {
+          "text": "Download the key. Everyone else is doing it. Secure the bag.",
+          "stat_changes": { "visible": { "money": 20, "resume": 20 }, "hidden": { "collateral_damage": 10, "inner_peace": -30 } },
+          "next_node": "engr_sem7_conform"
+        },
+        {
+          "text": "Ignore the key, but fail to study because you are so burnt out.",
+          "stat_changes": { "visible": { "resume": -20 }, "hidden": { "inner_peace": -10 } },
+          "next_node": "engr_sem7_avoid"
+        },
+        {
+          "text": "Report the server. You are ostracized by your entire cohort.",
+          "stat_changes": { "visible": { "clout": -40 }, "hidden": { "inner_peace": 30 } },
+          "next_node": "engr_sem7_rebel"
+        }
+      ]
+    },
+    {
+      "id": "engr_sem6_avoid",
+      "text": "Semester 6. Final exams. You are barely passing. A recruiter from a major firm reaches out, looking for 'diversity hires' to boost their public image.",
+      "quote": "\"The perceived security of the status quo is a dangerous illusion.\" - Game Thesis",
+      "choices": [
+        {
+          "text": "Play the corporate game. Tell them exactly what they want to hear.",
+          "stat_changes": { "visible": { "money": 25, "clout": 15 }, "hidden": { "collateral_damage": 10, "inner_peace": -20 } },
+          "next_node": "engr_sem7_conform"
+        },
+        {
+          "text": "Delete the email. It's too much effort to pretend.",
+          "stat_changes": { "visible": { "clout": -10 }, "hidden": { "inner_peace": -5 } },
+          "next_node": "engr_sem7_avoid"
+        },
+        {
+          "text": "Reply with a scathing critique of their performative hiring practices.",
+          "stat_changes": { "visible": { "money": -15, "clout": -15 }, "hidden": { "inner_peace": 20, "lives_uplifted": 10 } },
+          "next_node": "engr_sem7_rebel"
+        }
+      ]
+    },
+    {
+      "id": "engr_sem6_rebel",
+      "text": "Semester 6. Final exams. You are respected by a few, but completely ignored by the corporate recruiters. A startup offers you equity to build an app that exploits gig workers.",
+      "quote": "\"When we speak of nature, we are speaking of ourselves.\" - David Suzuki",
+      "choices": [
+        {
+          "text": "You are tired of being broke. Take the equity and build the exploit.",
+          "stat_changes": { "visible": { "money": 35, "clout": 20 }, "hidden": { "collateral_damage": 35, "inner_peace": -40 } },
+          "next_node": "engr_sem7_conform"
+        },
+        {
+          "text": "Decline the offer, but stop working on your own positive projects.",
+          "stat_changes": { "visible": { "money": -5 }, "hidden": { "inner_peace": -10 } },
+          "next_node": "engr_sem7_avoid"
+        },
+        {
+          "text": "Decline the offer and launch an open-source co-op platform for the workers instead.",
+          "stat_changes": { "visible": { "money": -20, "clout": -10 }, "hidden": { "lives_uplifted": 30, "inner_peace": 35 } },
+          "next_node": "engr_sem7_rebel"
+        }
+      ]
+    },
+    {
+      "id": "engr_sem7_conform",
+      "text": "Semester 7. The final stretch. You are 'successful.' You have the job, the money, the clout. But you feel completely empty. A massive tech conference invites you to speak on 'Innovation'.",
+      "quote": "\"Everything can be taken from a man but one thing: the last of the human freedoms—to choose one's attitude.\" - Viktor Frankl",
+      "choices": [
+        {
+          "text": "Deliver a standard, buzzword-filled speech. Collect your check.",
+          "stat_changes": { "visible": { "money": 20, "clout": 30 }, "hidden": { "collateral_damage": 10, "inner_peace": -20 } },
+          "next_node": "engr_sem8_conform"
+        },
+        {
+          "text": "Cancel at the last minute due to a panic attack.",
+          "stat_changes": { "visible": { "clout": -20 }, "hidden": { "inner_peace": -10 } },
+          "next_node": "engr_sem8_avoid"
+        },
+        {
+          "text": "Use the stage to publicly denounce the unethical practices of your future employer.",
+          "stat_changes": { "visible": { "money": -50, "clout": -40, "resume": -40 }, "hidden": { "lives_uplifted": 40, "inner_peace": 50 } },
+          "next_node": "engr_sem8_rebel"
+        }
+      ]
+    },
+    {
+      "id": "engr_sem7_avoid",
+      "text": "Semester 7. You are completely checked out. You have no job lined up and no motivation. A peer offers to refer you to a high-paying role at a predatory loan company.",
+      "quote": "\"When we speak of nature, we are speaking of ourselves.\" - David Suzuki",
+      "choices": [
+        {
+          "text": "Take the referral. You need the money, who cares what they do?",
+          "stat_changes": { "visible": { "money": 30, "resume": 15 }, "hidden": { "collateral_damage": 25, "inner_peace": -30 } },
+          "next_node": "engr_sem8_conform"
+        },
+        {
+          "text": "Say you'll apply, but never get around to it.",
+          "stat_changes": { "visible": { "clout": -10 }, "hidden": { "inner_peace": -5 } },
+          "next_node": "engr_sem8_avoid"
+        },
+        {
+          "text": "Refuse the referral and finally start building a portfolio of ethical software.",
+          "stat_changes": { "visible": { "clout": -15 }, "hidden": { "lives_uplifted": 20, "inner_peace": 25 } },
+          "next_node": "engr_sem8_rebel"
+        }
+      ]
+    },
+    {
+      "id": "engr_sem7_rebel",
+      "text": "Semester 7. You are barely scraping by financially, but your soul is intact. You are nominated for a grassroots community award, but attending means missing your final exam review.",
+      "quote": "\"Action on behalf of life transforms. Because the relationship between self and the world is reciprocal.\" - Robin Wall Kimmerer",
+      "choices": [
+        {
+          "text": "Skip the award. You need to salvage your GPA for a normal job.",
+          "stat_changes": { "visible": { "resume": 15 }, "hidden": { "lives_uplifted": -10, "inner_peace": -15 } },
+          "next_node": "engr_sem8_conform"
+        },
+        {
+          "text": "Sleep through both the review and the award ceremony.",
+          "stat_changes": { "visible": { "resume": -10 }, "hidden": { "inner_peace": -10 } },
+          "next_node": "engr_sem8_avoid"
+        },
+        {
+          "text": "Attend the ceremony. You fail the exam, but you find your true community.",
+          "stat_changes": { "visible": { "resume": -25, "clout": -10 }, "hidden": { "lives_uplifted": 20, "inner_peace": 30 } },
+          "next_node": "engr_sem8_rebel"
+        }
+      ]
+    },
+    {
+      "id": "engr_sem8_conform",
+      "text": "Semester 8. Graduation is tomorrow. You are signing the final paperwork for a life you aren't sure you want. A junior asks you for advice on how to succeed.",
+      "quote": "\"The illusion of security is the greatest danger.\" - Game Thesis",
+      "choices": [
+        {
+          "text": "Tell them to put their head down, grind the work, and chase the money.",
+          "stat_changes": { "visible": { "clout": 10 }, "hidden": { "collateral_damage": 20, "inner_peace": -20 } },
+          "next_node": "epilogue_trigger"
+        },
+        {
+          "text": "Tell them it doesn't matter, it's all meaningless anyway.",
+          "stat_changes": { "visible": { "clout": -5 }, "hidden": { "inner_peace": -10 } },
+          "next_node": "epilogue_trigger"
+        },
+        {
+          "text": "Tell them to run. To prioritize ethics over the algorithm. Try to save them.",
+          "stat_changes": { "visible": { "clout": -10 }, "hidden": { "lives_uplifted": 20, "inner_peace": 20 } },
+          "next_node": "epilogue_trigger"
+        }
+      ]
+    },
+    {
+      "id": "engr_sem8_avoid",
+      "text": "Semester 8. Graduation is tomorrow. You coasted through four years. You have nothing to show for it but a piece of paper and a deep sense of regret.",
+      "quote": "\"He who has a why to live for can bear almost any how.\" - Viktor Frankl",
+      "choices": [
+        {
+          "text": "Panic and accept a soulless data-entry job just to have an income.",
+          "stat_changes": { "visible": { "money": 15 }, "hidden": { "inner_peace": -20 } },
+          "next_node": "epilogue_trigger"
+        },
+        {
+          "text": "Accept your fate. Do nothing.",
+          "stat_changes": { "visible": { "clout": -10 }, "hidden": { "inner_peace": -10 } },
+          "next_node": "epilogue_trigger"
+        },
+        {
+          "text": "Decide it's not too late. Volunteer to teach STEM at a local middle school.",
+          "stat_changes": { "visible": { "money": -10 }, "hidden": { "lives_uplifted": 25, "inner_peace": 30 } },
+          "next_node": "epilogue_trigger"
+        }
+      ]
+    },
+    {
+      "id": "engr_sem8_rebel",
+      "text": "Semester 8. Graduation is tomorrow. You don't have a high-paying job lined up, but your tools are helping thousands. A corporate recruiter makes one last, desperate, massive offer.",
+      "quote": "\"We are now faced with the fact that tomorrow is today. We are confronted with the fierce urgency of now.\" - Martin Luther King Jr.",
+      "choices": [
+        {
+          "text": "You are tired of fighting. Take the money and sell out at the finish line.",
+          "stat_changes": { "visible": { "money": 50, "clout": 20 }, "hidden": { "collateral_damage": 20, "inner_peace": -40 } },
+          "next_node": "epilogue_trigger"
+        },
+        {
+          "text": "Ignore the email and stare at the ceiling.",
+          "stat_changes": { "visible": { "money": 0 }, "hidden": { "inner_peace": 0 } },
+          "next_node": "epilogue_trigger"
+        },
+        {
+          "text": "Delete the email. Walk across the stage with nothing but your integrity.",
+          "stat_changes": { "visible": { "money": -10, "clout": -10 }, "hidden": { "lives_uplifted": 10, "inner_peace": 40 } },
+          "next_node": "epilogue_trigger"
+        }
+      ]
+    },
+
+    {
+      "id": "hum_sem1",
+      "text": "Semester 1. Your introductory humanities seminar is electric with ideas, but your career counselor is already steering you toward marketing and corporate strategy. 'Literature and history won't pay your loans,' she says. 'Learn to sell.'",
+      "quote": "\"The worker becomes all the poorer the more wealth he produces.\" - Karl Marx",
+      "choices": [
+        {
+          "text": "Plagiarize a viral essay for your portfolio workshop to stand out from the class.",
+          "stat_changes": { "visible": { "resume": 15, "clout": 10 }, "hidden": { "collateral_damage": 15, "inner_peace": -20 } },
+          "next_node": "hum_sem2_conform"
+        },
+        {
+          "text": "Disengage from workshops entirely. Watch other students from a safe distance.",
+          "stat_changes": { "visible": { "resume": -10, "clout": -10 }, "hidden": { "inner_peace": -5 } },
+          "next_node": "hum_sem2_avoid"
+        },
+        {
+          "text": "Start a free zine covering stories from your campus community that mainstream media ignores.",
+          "stat_changes": { "visible": { "resume": -5, "clout": -10 }, "hidden": { "lives_uplifted": 20, "inner_peace": 15 } },
+          "next_node": "hum_sem2_rebel"
+        }
+      ]
+    },
+    {
+      "id": "hum_sem2_conform",
+      "text": "Semester 2. Your sharp writing catches the eye of a PR firm. They want you to craft a campaign burying negative press about a corporation involved in a wage theft lawsuit. The work is well-paying.",
+      "quote": "\"The Puritan wanted to work in calling; we are forced to do so.\" - Max Weber",
+      "choices": [
+        {
+          "text": "Write the campaign. You learn to make exploitation sound like generosity.",
+          "stat_changes": { "visible": { "money": 30, "resume": 20 }, "hidden": { "collateral_damage": 25, "inner_peace": -20 } },
+          "next_node": "hum_sem3_conform"
+        },
+        {
+          "text": "Take the money but do sloppy, half-hearted work so the campaign fails.",
+          "stat_changes": { "visible": { "money": 15, "resume": -5 }, "hidden": { "collateral_damage": 10, "inner_peace": -10 } },
+          "next_node": "hum_sem3_avoid"
+        },
+        {
+          "text": "Decline the contract. Write an exposé on the firm's tactics and publish it yourself.",
+          "stat_changes": { "visible": { "money": -15, "resume": -15 }, "hidden": { "lives_uplifted": 15, "inner_peace": 25 } },
+          "next_node": "hum_sem3_rebel"
+        }
+      ]
+    },
+    {
+      "id": "hum_sem2_rebel",
+      "text": "Semester 2. Your zine gains a small but dedicated readership. A student media organization offers to absorb it — but only if you accept corporate advertising and stop covering campus labor organizing.",
+      "quote": "\"Human progress never rolls in on wheels of inevitability.\" - Martin Luther King Jr.",
+      "choices": [
+        {
+          "text": "Accept the merger. The zine reaches more people even if the stories change.",
+          "stat_changes": { "visible": { "clout": 25, "resume": 15 }, "hidden": { "collateral_damage": 15, "inner_peace": -15 } },
+          "next_node": "hum_sem3_conform"
+        },
+        {
+          "text": "Kill the zine. You're tired of fighting for it. Retreat into your coursework.",
+          "stat_changes": { "visible": { "resume": -10, "clout": -10 }, "hidden": { "inner_peace": -10 } },
+          "next_node": "hum_sem3_avoid"
+        },
+        {
+          "text": "Keep the zine independent. You lose the platform boost, but double down on the labor coverage.",
+          "stat_changes": { "visible": { "resume": -5, "clout": -10 }, "hidden": { "lives_uplifted": 20, "inner_peace": 20 } },
+          "next_node": "hum_sem3_rebel"
+        }
+      ]
+    },
+    {
+      "id": "hum_sem2_avoid",
+      "text": "Semester 2. You are withdrawing further. A screenwriting professor spots your raw talent and offers to connect you with an entertainment agent — but the agent only handles content for a streaming platform known for exploitative labor practices.",
+      "quote": "\"He who has a why to live for can bear almost any how.\" - Viktor Frankl",
+      "choices": [
+        {
+          "text": "Pursue the agent. Your script gets optioned. You don't ask where the money comes from.",
+          "stat_changes": { "visible": { "money": 25, "resume": 20 }, "hidden": { "collateral_damage": 15, "inner_peace": -15 } },
+          "next_node": "hum_sem3_conform"
+        },
+        {
+          "text": "Agree to meet the agent, then cancel the day before. Classic.",
+          "stat_changes": { "visible": { "resume": -10 }, "hidden": { "inner_peace": -10 } },
+          "next_node": "hum_sem3_avoid"
+        },
+        {
+          "text": "Decline and channel the script into an independent short film about gig workers, shot on your phone.",
+          "stat_changes": { "visible": { "resume": -5, "clout": -10 }, "hidden": { "lives_uplifted": 15, "inner_peace": 15 } },
+          "next_node": "hum_sem3_rebel"
+        }
+      ]
+    },
+    {
+      "id": "hum_sem3_conform",
+      "text": "Semester 3. You are developing a reputation as a skilled writer and researcher for hire. A political consulting firm pays top dollar to write targeted disinformation designed to suppress voter turnout in communities of color.",
+      "quote": "\"The sad truth is that most evil is done by people who never make up their minds to be good or evil.\" - Hannah Arendt",
+      "choices": [
+        {
+          "text": "Write the content. It's technically legal. You are very good at it.",
+          "stat_changes": { "visible": { "money": 35, "clout": 20 }, "hidden": { "collateral_damage": 40, "inner_peace": -30 } },
+          "next_node": "hum_sem4_conform"
+        },
+        {
+          "text": "Take the deposit and write something vague and unusable. Keep the money.",
+          "stat_changes": { "visible": { "money": 15 }, "hidden": { "collateral_damage": 10, "inner_peace": -15 } },
+          "next_node": "hum_sem4_avoid"
+        },
+        {
+          "text": "Refuse and write a public thread documenting the firm's request in detail.",
+          "stat_changes": { "visible": { "money": -20, "clout": -25 }, "hidden": { "lives_uplifted": 30, "inner_peace": 30 } },
+          "next_node": "hum_sem4_rebel"
+        }
+      ]
+    },
+    {
+      "id": "hum_sem3_rebel",
+      "text": "Semester 3. Your independent journalism is reaching people. A prominent investigative news outlet wants your story on campus labor organizing — but their editor demands you name a source who asked to remain anonymous.",
+      "quote": "\"We are caught in an inescapable network of mutuality.\" - Martin Luther King Jr.",
+      "choices": [
+        {
+          "text": "Name the source. The story runs. The source loses their job.",
+          "stat_changes": { "visible": { "clout": 30, "resume": 20 }, "hidden": { "collateral_damage": 25, "inner_peace": -30 } },
+          "next_node": "hum_sem4_conform"
+        },
+        {
+          "text": "Agree to name the source, then kill the story at the last minute. Burn the bridge.",
+          "stat_changes": { "visible": { "clout": -10 }, "hidden": { "inner_peace": -10 } },
+          "next_node": "hum_sem4_avoid"
+        },
+        {
+          "text": "Protect the source. Pull the story and publish a shorter, source-free version independently.",
+          "stat_changes": { "visible": { "clout": -20, "resume": -10 }, "hidden": { "lives_uplifted": 20, "inner_peace": 25 } },
+          "next_node": "hum_sem4_rebel"
+        }
+      ]
+    },
+    {
+      "id": "hum_sem4_conform",
+      "text": "Semester 4. Junior Year. You have clout in media circles. A major news network offers a prestigious internship — writing chyrons and copy that frames poverty as a personal failing, never structural. It's the style guide.",
+      "quote": "\"A society in which consumption has to be artificially stimulated... is a society founded on trash and waste.\" - John de Graaf",
+      "choices": [
+        {
+          "text": "Accept. You absorb the framing until it feels like your own voice.",
+          "stat_changes": { "visible": { "money": 30, "clout": 30 }, "hidden": { "collateral_damage": 25, "inner_peace": -30 } },
+          "next_node": "hum_sem5_conform"
+        },
+        {
+          "text": "Accept the internship but produce nothing, paralyzed between compliance and conscience.",
+          "stat_changes": { "visible": { "clout": -10, "resume": -10 }, "hidden": { "inner_peace": -10 } },
+          "next_node": "hum_sem5_avoid"
+        },
+        {
+          "text": "Decline and instead embed yourself with a local community newspaper covering housing displacement.",
+          "stat_changes": { "visible": { "money": -20, "clout": -20 }, "hidden": { "lives_uplifted": 25, "inner_peace": 30 } },
+          "next_node": "hum_sem5_rebel"
+        }
+      ]
+    },
+    {
+      "id": "hum_sem4_rebel",
+      "text": "Semester 4. Junior Year. Your independent work has a loyal following. You uncover evidence that the university is ghost-writing positive editorials about itself and submitting them to the student newspaper under fake names.",
+      "quote": "\"There is something fundamentally wrong with treating the Earth as if it were a business in liquidation.\" - Herman Daly (via Suzuki)",
+      "choices": [
+        {
+          "text": "Sit on the evidence. The university controls your scholarship review.",
+          "stat_changes": { "visible": { "money": 10, "resume": 15 }, "hidden": { "collateral_damage": 20, "inner_peace": -30 } },
+          "next_node": "hum_sem5_conform"
+        },
+        {
+          "text": "Do nothing with it. Save the files in a folder you never open.",
+          "stat_changes": { "visible": { "clout": 0 }, "hidden": { "collateral_damage": 10, "inner_peace": -15 } },
+          "next_node": "hum_sem5_avoid"
+        },
+        {
+          "text": "Publish the exposé. Risk your scholarship. The university issues a public apology.",
+          "stat_changes": { "visible": { "money": -20, "clout": -15 }, "hidden": { "lives_uplifted": 30, "inner_peace": 25 } },
+          "next_node": "hum_sem5_rebel"
+        }
+      ]
+    },
+    {
+      "id": "hum_sem5_conform",
+      "text": "Semester 5. You are polished and employable. For your senior project, your advisor pushes you toward a 'safe' academic analysis. You have a different story you need to tell — about your own family's history of displacement.",
+      "quote": "\"The worker is related to the product of his labor as to an alien object.\" - Karl Marx",
+      "choices": [
+        {
+          "text": "Write the safe project. It gets top marks. Your own story stays buried.",
+          "stat_changes": { "visible": { "clout": 25, "resume": 25 }, "hidden": { "collateral_damage": 10, "inner_peace": -30 } },
+          "next_node": "hum_sem6_conform"
+        },
+        {
+          "text": "Start your personal project, then abandon it halfway. Turn in something unfinished.",
+          "stat_changes": { "visible": { "resume": -20 }, "hidden": { "inner_peace": -15 } },
+          "next_node": "hum_sem6_avoid"
+        },
+        {
+          "text": "Write the true story of your family's displacement. Your advisor gives you a C. It is the most important thing you have ever written.",
+          "stat_changes": { "visible": { "clout": -20, "resume": -20 }, "hidden": { "lives_uplifted": 20, "inner_peace": 35 } },
+          "next_node": "hum_sem6_rebel"
+        }
+      ]
+    },
+    {
+      "id": "hum_sem5_rebel",
+      "text": "Semester 5. Your housing displacement coverage gets traction. A real estate developer threatens legal action to silence your reporting. A media law clinic can defend you for free — but the case will consume your academic life.",
+      "quote": "\"We are showering radioactive fallout... to kill insects, we are destroying the birds and the fishes.\" - Rachel Carson",
+      "choices": [
+        {
+          "text": "Retract the story. Issue a carefully worded apology. Move on.",
+          "stat_changes": { "visible": { "resume": 10, "clout": 10 }, "hidden": { "collateral_damage": 20, "inner_peace": -25 } },
+          "next_node": "hum_sem6_conform"
+        },
+        {
+          "text": "Go silent. Delete your accounts. Disappear into your coursework.",
+          "stat_changes": { "visible": { "clout": -15 }, "hidden": { "inner_peace": -15 } },
+          "next_node": "hum_sem6_avoid"
+        },
+        {
+          "text": "Fight the legal threat. The case takes a year but the reporting stands. Tenant groups rally around you.",
+          "stat_changes": { "visible": { "money": -15, "resume": -10 }, "hidden": { "lives_uplifted": 30, "collateral_damage": -10, "inner_peace": 30 } },
+          "next_node": "hum_sem6_rebel"
+        }
+      ]
+    },
+    {
+      "id": "hum_sem6_conform",
+      "text": "Semester 6. Graduation looms. A content farm offers a full-time job writing SEO articles designed to spread health misinformation under the guise of wellness content. The salary is extraordinary.",
+      "quote": "\"The banality of evil... the terrifyingly normal adherence to the system.\" - Hannah Arendt",
+      "choices": [
+        {
+          "text": "Take the job. You write a hundred articles undermining public health. You buy a nice apartment.",
+          "stat_changes": { "visible": { "money": 40, "resume": 15 }, "hidden": { "collateral_damage": 35, "inner_peace": -35 } },
+          "next_node": "hum_sem7_conform"
+        },
+        {
+          "text": "Take the job but write articles so bad they never publish them. Collect paychecks and feel hollow.",
+          "stat_changes": { "visible": { "money": 20 }, "hidden": { "collateral_damage": 5, "inner_peace": -15 } },
+          "next_node": "hum_sem7_avoid"
+        },
+        {
+          "text": "Refuse. Spend the semester writing a reader's guide to identifying health misinformation, published for free.",
+          "stat_changes": { "visible": { "money": -20, "clout": -15 }, "hidden": { "lives_uplifted": 30, "inner_peace": 30 } },
+          "next_node": "hum_sem7_rebel"
+        }
+      ]
+    },
+    {
+      "id": "hum_sem6_rebel",
+      "text": "Semester 6. Your legal fight made you known in press freedom circles but toxic to mainstream media employers. A small nonprofit journal offers you a staff position — the pay is poverty level, but the work is fully independent.",
+      "quote": "\"When we speak of nature, we are speaking of ourselves.\" - David Suzuki",
+      "choices": [
+        {
+          "text": "Turn it down. You need a livable wage. Take a corporate content strategy role instead.",
+          "stat_changes": { "visible": { "money": 30, "clout": 15 }, "hidden": { "collateral_damage": 15, "inner_peace": -20 } },
+          "next_node": "hum_sem7_conform"
+        },
+        {
+          "text": "Accept the job offer, then spend the first month staring at a blank document, overwhelmed.",
+          "stat_changes": { "visible": { "money": -5 }, "hidden": { "inner_peace": -10 } },
+          "next_node": "hum_sem7_avoid"
+        },
+        {
+          "text": "Accept and throw yourself into the work. Your first piece changes a local election.",
+          "stat_changes": { "visible": { "money": -15, "resume": -10 }, "hidden": { "lives_uplifted": 25, "inner_peace": 30 } },
+          "next_node": "hum_sem7_rebel"
+        }
+      ]
+    },
+    {
+      "id": "hum_sem7_conform",
+      "text": "Semester 7. You are polished and well-compensated. A junior classmate has written a devastating, important piece about sexual harassment in the department. No publication will touch it. They ask you to use your connections to help them publish it.",
+      "quote": "\"Everything can be taken from a man but one thing: the last of the human freedoms—to choose one's attitude.\" - Viktor Frankl",
+      "choices": [
+        {
+          "text": "Decline. One of the people named in the piece is a powerful contact of yours.",
+          "stat_changes": { "visible": { "clout": 10, "money": 10 }, "hidden": { "collateral_damage": 20, "inner_peace": -25 } },
+          "next_node": "hum_sem8_conform"
+        },
+        {
+          "text": "Promise to help, then do nothing. Ghost them.",
+          "stat_changes": { "visible": { "clout": -5 }, "hidden": { "collateral_damage": 10, "inner_peace": -15 } },
+          "next_node": "hum_sem8_avoid"
+        },
+        {
+          "text": "Use every connection you have to get it published. Burn the powerful contact. The piece changes policy.",
+          "stat_changes": { "visible": { "clout": -25, "money": -10 }, "hidden": { "lives_uplifted": 35, "inner_peace": 35 } },
+          "next_node": "hum_sem8_rebel"
+        }
+      ]
+    },
+    {
+      "id": "hum_sem7_rebel",
+      "text": "Semester 7. Your work is honest and your integrity intact. A large national publication offers you a staff job — on the condition that you sign away the rights to all your previous independent work, including your family displacement story.",
+      "quote": "\"Action on behalf of life transforms. Because the relationship between self and the world is reciprocal.\" - Robin Wall Kimmerer",
+      "choices": [
+        {
+          "text": "Sign the rights away. The platform is worth it. Your family's story is now owned by a media conglomerate.",
+          "stat_changes": { "visible": { "money": 35, "clout": 25 }, "hidden": { "collateral_damage": 10, "inner_peace": -35 } },
+          "next_node": "hum_sem8_conform"
+        },
+        {
+          "text": "Neither sign nor decline. Let the offer sit unread for months.",
+          "stat_changes": { "visible": { "money": -5 }, "hidden": { "inner_peace": -10 } },
+          "next_node": "hum_sem8_avoid"
+        },
+        {
+          "text": "Refuse the rights clause. Walk away from the offer. Publish your family story as an open-access piece that spreads widely.",
+          "stat_changes": { "visible": { "money": -15, "clout": -15 }, "hidden": { "lives_uplifted": 20, "inner_peace": 40 } },
+          "next_node": "hum_sem8_rebel"
+        }
+      ]
+    },
+    {
+      "id": "hum_sem8_conform",
+      "text": "Semester 8. Graduation. You are a skilled writer with a comfortable career ahead of you. A first-year student shows you their raw, urgent, true piece of writing and asks if they should pursue this path.",
+      "quote": "\"The illusion of security is the greatest danger.\" - Game Thesis",
+      "choices": [
+        {
+          "text": "Tell them to learn SEO, build a brand, and monetize. Kill the urgency before it kills them.",
+          "stat_changes": { "visible": { "clout": 10 }, "hidden": { "collateral_damage": 20, "inner_peace": -20 } },
+          "next_node": "epilogue_trigger"
+        },
+        {
+          "text": "Tell them you don't know. Shrug. Walk to your own graduation.",
+          "stat_changes": { "visible": { "clout": -5 }, "hidden": { "inner_peace": -10 } },
+          "next_node": "epilogue_trigger"
+        },
+        {
+          "text": "Tell them their story is the most important thing in the world and someone needs to tell it. Make sure it's them.",
+          "stat_changes": { "visible": { "clout": -10 }, "hidden": { "lives_uplifted": 25, "inner_peace": 20 } },
+          "next_node": "epilogue_trigger"
+        }
+      ]
+    },
+    {
+      "id": "hum_sem8_rebel",
+      "text": "Semester 8. Graduation. You have no staff job lined up, but your work has mattered. A media conglomerate makes one final offer: a high salary to run their 'social impact' content vertical, which will give ethical cover to their other exploitative divisions.",
+      "quote": "\"We are now faced with the fact that tomorrow is today. We are confronted with the fierce urgency of now.\" - Martin Luther King Jr.",
+      "choices": [
+        {
+          "text": "Accept. You'll try to do real work from the inside. You know how this ends.",
+          "stat_changes": { "visible": { "money": 45, "clout": 20 }, "hidden": { "collateral_damage": 25, "inner_peace": -35 } },
+          "next_node": "epilogue_trigger"
+        },
+        {
+          "text": "Leave the email unread. Procrastinate until the offer expires.",
+          "stat_changes": { "visible": { "money": 0 }, "hidden": { "inner_peace": -5 } },
+          "next_node": "epilogue_trigger"
+        },
+        {
+          "text": "Decline. Start an independent media cooperative with three other graduating students who feel the same.",
+          "stat_changes": { "visible": { "money": -15, "clout": -10 }, "hidden": { "lives_uplifted": 30, "inner_peace": 40 } },
+          "next_node": "epilogue_trigger"
+        }
+      ]
+    },
+    {
+      "id": "hum_sem4_avoid",
+      "text": "Semester 4. Avoidance Node. (Routing back to main paths).",
+      "quote": "Placeholder",
+      "choices": [
+        { "text": "Snap out of it and conform.", "stat_changes": {}, "next_node": "hum_sem5_conform" },
+        { "text": "Keep avoiding.", "stat_changes": {}, "next_node": "hum_sem5_avoid" },
+        { "text": "Wake up and rebel.", "stat_changes": {}, "next_node": "hum_sem5_rebel" }
+      ]
+    },
+    {
+      "id": "hum_sem5_avoid",
+      "text": "Semester 5. Avoidance Node. (Routing back to main paths).",
+      "quote": "Placeholder",
+      "choices": [
+        { "text": "Snap out of it and conform.", "stat_changes": {}, "next_node": "hum_sem6_conform" },
+        { "text": "Keep avoiding.", "stat_changes": {}, "next_node": "hum_sem6_avoid" },
+        { "text": "Wake up and rebel.", "stat_changes": {}, "next_node": "hum_sem6_rebel" }
+      ]
+    },
+    {
+      "id": "hum_sem6_avoid",
+      "text": "Semester 6. Avoidance Node. (Routing back to main paths).",
+      "quote": "Placeholder",
+      "choices": [
+        { "text": "Snap out of it and conform.", "stat_changes": {}, "next_node": "hum_sem7_conform" },
+        { "text": "Keep avoiding.", "stat_changes": {}, "next_node": "hum_sem7_avoid" },
+        { "text": "Wake up and rebel.", "stat_changes": {}, "next_node": "hum_sem7_rebel" }
+      ]
+    },
+    {
+      "id": "hum_sem7_avoid",
+      "text": "Semester 7. Avoidance Node. (Routing back to main paths).",
+      "quote": "Placeholder",
+      "choices": [
+        { "text": "Snap out of it and conform.", "stat_changes": {}, "next_node": "hum_sem8_conform" },
+        { "text": "Keep avoiding.", "stat_changes": {}, "next_node": "hum_sem8_avoid" },
+        { "text": "Wake up and rebel.", "stat_changes": {}, "next_node": "hum_sem8_rebel" }
+      ]
+    },
+    {
+      "id": "hum_sem8_avoid",
+      "text": "Semester 8. Graduation is tomorrow. You spent four years with the gift of narrative and said almost nothing with it.",
+      "quote": "Placeholder",
+      "choices": [
+        { "text": "Accept your fate.", "stat_changes": {}, "next_node": "epilogue_trigger" }
+      ]
+    }
+  ],
+  "epilogueLogic": {
+    "description": "When the game reaches 'epilogue_trigger', the UI drops the visible stats entirely. The game reads the final hidden stats to deliver the conclusion.",
+    "conditions": [
+      {
+        "if": "hidden.inner_peace < 20 && hidden.collateral_damage > 50",
+        "title": "The Iron Cage Achieved",
+        "text": "10 Years Later: You have everything society told you to want. You are incredibly wealthy and highly respected. But your work has systematically harmed others, automated away jobs, and extracted resources without giving back. You stare at your massive bank account, completely alienated from your own life. The dangerous illusion worked."
+      },
+      {
+        "if": "hidden.inner_peace >= 60 && hidden.lives_uplifted > 50",
+        "title": "Authentic Resistance",
+        "text": "10 Years Later: Your resume is a mess. You never made the 30-under-30 list. But the systems you built empower people. You rejected the status quo, and while society punished you with lower pay and less prestige, you sleep soundly. You broke the illusion, and in doing so, you found out what actually matters."
+      },
+      {
+        "if": "hidden.inner_peace < 40 && hidden.lives_uplifted < 30 && hidden.collateral_damage < 30",
+        "title": "The Apathetic Drift",
+        "text": "10 Years Later: You avoided doing evil, but you also avoided doing good. You coasted through the system, neither conforming deeply nor rebelling meaningfully. You escaped the worst of the corporate machine, but you failed to find your authentic purpose."
+      },
+      {
+        "if": "default",
+        "title": "The Mixed Reality",
+        "text": "10 Years Later: You compromised. You took some of the money, and you tried to do some good on the side. You are comfortable, but the tension between the societal illusion and your inner authenticity remains a daily battle."
+      }
+    ]
+  }
+}
