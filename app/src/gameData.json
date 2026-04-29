@@ -918,22 +918,26 @@
       {
         "if": "hidden.inner_peace < 20 && hidden.collateral_damage > 50",
         "title": "The Iron Cage Achieved",
-        "text": "10 Years Later: You have everything society told you to want. You are incredibly wealthy and highly respected. But your work has systematically harmed others, automated away jobs, and extracted resources without giving back. You stare at your massive bank account, completely alienated from your own life. The dangerous illusion worked."
+        "text": "10 Years Later: You have everything society told you to want. You are incredibly wealthy and highly respected. But your work has systematically harmed others, automated away jobs, and extracted resources without giving back. You stare at your massive bank account, completely alienated from your own life. The dangerous illusion worked.",
+        "quote": "Placeholder"
       },
       {
         "if": "hidden.inner_peace >= 60 && hidden.lives_uplifted > 50",
         "title": "Authentic Resistance",
-        "text": "10 Years Later: Your resume is a mess. You never made the 30-under-30 list. But the systems you built empower people. You rejected the status quo, and while society punished you with lower pay and less prestige, you sleep soundly. You broke the illusion, and in doing so, you found out what actually matters."
+        "text": "10 Years Later: Your resume is a mess. You never made the 30-under-30 list. But the systems you built empower people. You rejected the status quo, and while society punished you with lower pay and less prestige, you sleep soundly. You broke the illusion, and in doing so, you found out what actually matters.",
+        "quote": "Placeholder"
       },
       {
         "if": "hidden.inner_peace < 40 && hidden.lives_uplifted < 30 && hidden.collateral_damage < 30",
         "title": "The Apathetic Drift",
-        "text": "10 Years Later: You avoided doing evil, but you also avoided doing good. You coasted through the system, neither conforming deeply nor rebelling meaningfully. You escaped the worst of the corporate machine, but you failed to find your authentic purpose."
+        "text": "10 Years Later: You avoided doing evil, but you also avoided doing good. You coasted through the system, neither conforming deeply nor rebelling meaningfully. You escaped the worst of the corporate machine, but you failed to find your authentic purpose.",
+        "quote": "Placeholder"
       },
       {
         "if": "default",
         "title": "The Mixed Reality",
-        "text": "10 Years Later: You compromised. You took some of the money, and you tried to do some good on the side. You are comfortable, but the tension between the societal illusion and your inner authenticity remains a daily battle."
+        "text": "10 Years Later: You compromised. You took some of the money, and you tried to do some good on the side. You are comfortable, but the tension between the societal illusion and your inner authenticity remains a daily battle.",
+        "quote": "Placeholder"
       }
     ]
   }

@@ -123,6 +123,7 @@ if(epilogue) {
           <h1 className="title">GRADUATION DAY</h1>
           <h2 className="subtitle">{finalStory.title}</h2>
           <p className="scenario-text">{finalStory.text}</p>
+          <blockquote className="quote">{finalStory.quote}</blockquote>
           
           <div className="final-stats">
             <h3>The Hidden Reality (True Stats):</h3>
