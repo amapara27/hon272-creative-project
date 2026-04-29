@@ -15,6 +15,23 @@ function App() {
   // first scenario
   const scenario = gameData.nodes.find(n => n.id === node);
 
+  // gets label for current year and semester
+  const getTimelineLabel = () => {
+    if (epilogue) {
+      return 'Year 4 • Graduation';
+    }
+
+    const idMatch = node.match(/_sem(\d+)/i);
+    const textMatch = scenario?.text?.match(/Semester\s+(\d+)/i);
+    const semester = Number(idMatch?.[1] || textMatch?.[1] || 1);
+    const year = Math.floor((semester - 1) / 2) + 1;
+    const term = semester % 2 === 1 ? 'Fall' : 'Spring';
+
+    return `Year ${year} • Semester ${semester} (${term})`;
+  };
+
+  
+  // creates indicator for visual stat changes
   const vStatChanges = (choice) => {
     const vChanges = choice.stat_changes?.visible;
 
@@ -102,6 +119,7 @@ if(epilogue) {
     return (
       <div className="container">
         <div className="epilogue-screen scene-enter">
+          <p className="timeline-pill">{getTimelineLabel()}</p>
           <h1 className="title">GRADUATION DAY</h1>
           <h2 className="subtitle">{finalStory.title}</h2>
           <p className="scenario-text">{finalStory.text}</p>
@@ -121,6 +139,7 @@ if(epilogue) {
     <div className="container">
       <header className="game-header scene-enter">
         <h1 className="game-title">The Illusion of Security</h1>
+        <p className="timeline-pill">{getTimelineLabel()}</p>
       </header>
 
       {/* illusion stat dashboard */}
