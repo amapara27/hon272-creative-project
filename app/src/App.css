@@ -55,6 +55,7 @@
 }
 
 .stat {
+  --stat-accent: #7be2b7;
   border-radius: 0.375rem;
   border: 1px solid #30405a;
   border-top-width: 3px;
@@ -70,15 +71,34 @@
 }
 
 .stat:nth-child(1) {
+  --stat-accent: #7be2b7;
   border-top-color: #7be2b7;
 }
 
 .stat:nth-child(2) {
+  --stat-accent: #c18fff;
   border-top-color: #c18fff;
 }
 
 .stat:nth-child(3) {
+  --stat-accent: #69b8ff;
   border-top-color: #69b8ff;
+}
+
+.stat-bar {
+  margin-top: 0.55rem;
+  height: 0.42rem;
+  border-radius: 999px;
+  background-color: #111926;
+  border: 1px solid #2a3a52;
+  overflow: hidden;
+}
+
+.stat-fill {
+  height: 100%;
+  border-radius: inherit;
+  background-color: var(--stat-accent);
+  transition: width 240ms ease;
 }
 
 .game-content,

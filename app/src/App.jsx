@@ -6,6 +6,8 @@ import gameData from './gameData.json';
 function App() {
   const vStatOrder = ['money', 'clout', 'resume'];
   const nodeIds = new Set(gameData.nodes.map((n) => n.id));
+
+  const statFill = (value) => Math.max(0, Math.min(100, value));
   
   // initial states
   const [node, setNode] = useState('start');
@@ -167,9 +169,24 @@ if(epilogue) {
 
       {/* illusion stat dashboard */}
       <div className="dashboard">
-        <div className="stat">Money: {vStats.money}</div>
-        <div className="stat">Clout: {vStats.clout}</div>
-        <div className="stat">Resume: {vStats.resume}</div>
+        <div className="stat">
+          <div>Money: {vStats.money}</div>
+          <div className="stat-bar">
+            <div className="stat-fill" style={{ width: `${statFill(vStats.money)}%` }} />
+          </div>
+        </div>
+        <div className="stat">
+          <div>Clout: {vStats.clout}</div>
+          <div className="stat-bar">
+            <div className="stat-fill" style={{ width: `${statFill(vStats.clout)}%` }} />
+          </div>
+        </div>
+        <div className="stat">
+          <div>Resume: {vStats.resume}</div>
+          <div className="stat-bar">
+            <div className="stat-fill" style={{ width: `${statFill(vStats.resume)}%` }} />
+          </div>
+        </div>
       </div>
 
       {/* game content */}
