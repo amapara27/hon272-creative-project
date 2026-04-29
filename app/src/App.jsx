@@ -98,17 +98,17 @@ function App() {
 
     // opposed social norms
     else if (hStats.inner_peace >= 60 && hStats.lives_uplifted > 50) {
-      return gameData.epilogueLogic.conditions[1]; // Authentic Resistance
+      return gameData.epilogueLogic.conditions[1];
     } 
 
     // bystander 
     else if (hStats.inner_peace < 40 && hStats.lives_uplifted < 30 && hStats.collateral_damage < 30) {
-      return gameData.epilogueLogic.conditions[2]; // The Apathetic Drift
+      return gameData.epilogueLogic.conditions[2];
     } 
 
     // miced
     else {
-      return gameData.epilogueLogic.conditions[3]; // The Mixed Reality (Default)
+      return gameData.epilogueLogic.conditions[3];
     }
   }
 
