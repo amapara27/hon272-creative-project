@@ -5,6 +5,7 @@ import gameData from './gameData.json';
 
 function App() {
   const vStatOrder = ['money', 'clout', 'resume'];
+  const nodeIds = new Set(gameData.nodes.map((n) => n.id));
   
   // initial states
   const [node, setNode] = useState('start');
@@ -51,8 +52,35 @@ function App() {
       });
   };
 
+  // dynamic next node routing using hidden stats so prior choices influence future branches
+  const resolveNextNode = (nextNode, projectedHStats) => {
+    const match = nextNode.match(/^(.*_sem\d+)_(conform|avoid|rebel)$/i);
+
+    if (!match) {
+      return nextNode;
+    }
+
+    const base = match[1];
+    const directionScore =
+      projectedHStats.lives_uplifted +
+      projectedHStats.inner_peace -
+      projectedHStats.collateral_damage;
+
+    let branch = 'avoid';
+    if (directionScore >= 35) {
+      branch = 'rebel';
+    } else if (directionScore <= -20) {
+      branch = 'conform';
+    }
+
+    const routedNode = `${base}_${branch}`;
+    return nodeIds.has(routedNode) ? routedNode : nextNode;
+  };
+
   // choice handler function
   const handleChoice = (choice) => {
+    const newHStats = { ...hStats };
+
     if (choice.stat_changes?.visible) {
 
       // new visible stats
@@ -66,24 +94,18 @@ function App() {
     }
 
     if (choice.stat_changes?.hidden) {
-
-      // new hidden stats
-      const newHStats = { ...hStats }
-
-
       for (const [key, value] of Object.entries(choice.stat_changes.hidden)) {
         newHStats[key] += value;
       }
-
-      setHStats(newHStats);
     }
+    setHStats(newHStats);
 
     // set the next node
     if (choice.next_node === "epilogue_trigger") {
       setEpilogue(true);
     }
     else {
-      setNode(choice.next_node);
+      setNode(resolveNextNode(choice.next_node, newHStats));
     }
 
   }
