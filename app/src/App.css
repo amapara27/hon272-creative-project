@@ -70,7 +70,7 @@
 }
 
 .stat:nth-child(1) {
-  border-top-color: #69b8ff;
+  border-top-color: #7be2b7;
 }
 
 .stat:nth-child(2) {
@@ -78,7 +78,7 @@
 }
 
 .stat:nth-child(3) {
-  border-top-color: #7be2b7;
+  border-top-color: #69b8ff;
 }
 
 .game-content,
