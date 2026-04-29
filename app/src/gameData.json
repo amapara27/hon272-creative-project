@@ -51,7 +51,7 @@
     {
       "id": "engr_sem2_conform",
       "text": "You scored a prestigious interview, but the company builds addictive social media algorithms. Your peers are jealous.",
-      "quote": "\"The life that he ahs given to the object sets itself against him as an alien and horrible force.\" - Karl Marx (151)",
+      "quote": "\"The life that he has given to the object sets itself against him as an alien and horrible force.\" - Karl Marx (151)",
       "choices": [
         {
           "text": "Ace the interview. Optimize the algorithm for maximum user retention.",
@@ -164,7 +164,7 @@
       "quote": "\"For time is the essential ingredient; but in the modern world there is no time.\" - Carson (301)",
       "choices": [
         {
-          "text": "Abandon them, it's a waste of time anyway. Take a lucrative freelance gig to work on missle defense systems.",
+          "text": "Abandon them, it's a waste of time anyway. Take a lucrative freelance gig to work on missile defense systems.",
           "stat_changes": { "visible": { "money": 25, "resume": 15 }, "hidden": { "collateral_damage": 15, "inner_peace": -25 } },
           "next_node": "engr_sem4_conform"
         },
@@ -271,7 +271,7 @@
     {
       "id": "engr_sem5_avoid",
       "text": "Nothing is interesting anymore. You get assigned to maintain legacy code for the university library system. It's boring work that leaves you wanting more.",
-      "quote": "\"He would have a bad concience only if he had not done what he had been ordered to do...\" - Hannah Arendt (175)",
+      "quote": "\"He would have a bad conscience only if he had not done what he had been ordered to do...\" - Hannah Arendt (175)",
       "choices": [
         {
           "text": "Change the codebase to charge students insanely high late fees to improve your own metrics.",
@@ -337,7 +337,7 @@
     {
       "id": "engr_sem6_avoid",
       "text": "Final exams hit and you're barely passing. A recruiter from a major defense firm reaches out, she says they're looking for new interns.",
-      "quote": "\"He had always acted against his \"inclinncations\"...\" - Hannah Arendt (181)",
+      "quote": "\"He had always acted against his \"inclinations\"...\" - Hannah Arendt (181)",
       "choices": [
         {
           "text": "Jump at this chance, it's the break you need..",
@@ -447,7 +447,7 @@
     {
       "id": "engr_sem8_conform",
       "text": "Graduation is tomorrow. You are signing the final paperwork for a life you aren't sure you want. A junior asks you for advice on how to succeed.",
-      "quote": "\"The iron cage will determine the lives of all individuals who are born into the mechanism... with irresistable force.\" - Max Weber (168)",
+      "quote": "\"The iron cage will determine the lives of all individuals who are born into the mechanism... with irresistible force.\" - Max Weber (168)",
       "choices": [
         {
           "text": "Tell them to put their head down, grind hard, and chase the bag no matter what.",
@@ -536,7 +536,7 @@
     {
       "id": "hum_sem2_conform",
       "text": "Your great writing catches the eye of a PR firm. They want you to lead a campaign burying negative press about a corporation involved in some shady business. They're paying you more money than you've ever seen in your life.",
-      "quote": "\"As he alienates his own activity, so he estows upon the stranger activity that is not his own.\" - Karl Marx (156)",
+      "quote": "\"As he alienates his own activity, so he bestows upon the stranger activity that is not his own.\" - Karl Marx (156)",
       "choices": [
         {
           "text": "Craft the campaign. You learn how to make immoral business dealings sound like generosity. That money helps at least.",
@@ -725,7 +725,7 @@
           "next_node": "hum_sem5_avoid"
         },
         {
-          "text": "Go public with it. You risk your scholarship, but the university ends up offering an aploogy.",
+          "text": "Go public with it. You risk your scholarship, but the university ends up offering an apology.",
           "stat_changes": { "visible": { "money": -20, "clout": -15 }, "hidden": { "lives_uplifted": 30, "inner_peace": 25 } },
           "next_node": "hum_sem5_rebel"
         }
@@ -865,7 +865,7 @@
     },
     {
       "id": "hum_sem7_conform",
-      "text": "Your resume is polished and you've been well-compensated. A junior classmate has written a devastating, important piece about someone plagirizing their work. They ask you to write and publish something about it.",
+      "text": "Your resume is polished and you've been well-compensated. A junior classmate has written a devastating, important piece about someone plagiarizing their work. They ask you to write and publish something about it.",
       "quote": "\"Injustice anywhere is a threat to justice everywhere.\" - Martin Luther King Jr. (209)",
       "choices": [
         {
