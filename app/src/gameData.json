@@ -10,7 +10,7 @@
   "nodes": [
     {
       "id": "start",
-      "text": "Welcome to your freshman year. The next four years will dictate your future. Before the journey begins, you must declare your major. This choice will define the expectations society places upon you.",
+      "text": "Welcome to your freshman year. The next four years will shape your future. Before the journey begins, you must declare your major. This choice will define the expectations society places upon you.",
       "quote": "\"Man is ultimately self-determining.\" - Victor E. Frankl (133)",
       "choices": [
         {
@@ -28,7 +28,7 @@
 
     {
       "id": "engr_sem1",
-      "text": "Your introductory engineering class is designed to weed people out. It feels like everyone around you is ahead of you. There is immense pressure to stand out.",
+      "text": "Your introductory engineering class is designed to weed people out early. The impostor syndrome is unbearable and there is so much pressure to stand out.",
       "quote": "\"That which does not kill me makes me stronger.\" - Victor E. Frankl (82)",
       "choices": [
         {
@@ -37,7 +37,7 @@
           "next_node": "engr_sem2_conform"
         },
         {
-          "text": "Coast through your classes and decide to wait another year before applying to internships.",
+          "text": "Get by in your classes and decide to wait another year before applying to internships.",
           "stat_changes": { "visible": { "resume": -10, "clout": -10 }, "hidden": { "inner_peace": -5, "lives_uplifted": 0 } },
           "next_node": "engr_sem2_avoid"
         },
@@ -50,21 +50,21 @@
     },
     {
       "id": "engr_sem2_conform",
-      "text": "You scored a prestigious interview, but the company builds addictive social media algorithms. Your peers are jealous.",
+      "text": "You got a prestigious interview, and your peers are jealous of you, but the company builds addictive interfaces that keep people doomscrolling.",
       "quote": "\"The life that he has given to the object sets itself against him as an alien and horrible force.\" - Karl Marx (151)",
       "choices": [
         {
-          "text": "Ace the interview. Optimize the algorithm for maximum user retention.",
+          "text": "Ace the interview and tell them you can't wait to get started.",
           "stat_changes": { "visible": { "money": 30, "resume": 20 }, "hidden": { "collateral_damage": 25, "inner_peace": -20 } },
           "next_node": "engr_sem3_conform"
         },
         {
-          "text": "Show up unprepared and bomb it intentionally to escape the pressure.",
+          "text": "Show up unprepared because you were studying. You end up blanking when you're asked about your resume",
           "stat_changes": { "visible": { "money": -10, "clout": -15 }, "hidden": { "inner_peace": 5 } },
           "next_node": "engr_sem3_avoid"
         },
         {
-          "text": "Use the interview to question their ethics. You get blacklisted.",
+          "text": "Use the interview to question their ethics. You get blacklisted from their company.",
           "stat_changes": { "visible": { "money": -20, "resume": -15 }, "hidden": { "lives_uplifted": 10, "inner_peace": 25 } },
           "next_node": "engr_sem3_rebel"
         }
@@ -72,11 +72,11 @@
     },
     {
       "id": "engr_sem2_rebel",
-      "text": "Your open-source project was mocked by your peers for lacking ambition and not generating money. You're offered a chance to join one of the best hackathon teams on campus, but their project is a sketchy crypto exchange.",
+      "text": "You get made fun of for the open-source app you made that didn't get any users. One of the best hackathon teams in the school asks you to join them, but they plan on making something you disagree with.",
       "quote": "\"Groups are more immoral than individuals.\" - Martin Luther King Jr. (210).",
       "choices": [
         {
-          "text": "Join the team for the prize money and resume boost - the LinkedIn post after winning will feel great.",
+          "text": "Join the team for the prize money and resume boost. The LinkedIn post after winning will feel great.",
           "stat_changes": { "visible": { "money": 20, "clout": 20 }, "hidden": { "collateral_damage": 15, "inner_peace": -15 } },
           "next_node": "engr_sem3_conform"
         },
@@ -94,7 +94,7 @@
     },
     {
       "id": "engr_sem2_avoid",
-      "text": "Coasting is catching up to you. The impostor syndrome is killing your self-esteem. A professor offers you a spot in a research lab, but it requires long and uncredited hours.",
+      "text": "Coasting is catching up to you. You don't stand out at all. A professor offers you a spot in a research lab, but it requires long and uncredited hours.",
       "quote": "\"Sudden loss of hope and courage can have a deadly affect.\" - Viktor E. Frankl (75)",
       "choices": [
         {
@@ -108,7 +108,7 @@
           "next_node": "engr_sem3_avoid"
         },
         {
-          "text": "Take the lab spot, but insist on open-sourcing the data for public good.",
+          "text": "Take the lab spot, but insist on open sourcing the data for public good.",
           "stat_changes": { "visible": { "clout": -10, "resume": 5 }, "hidden": { "lives_uplifted": 20, "inner_peace": 15 } },
           "next_node": "engr_sem3_rebel"
         }
@@ -138,8 +138,8 @@
     },
     {
       "id": "engr_sem3_avoid",
-      "text": "Every day feels the same. Today, you get grouped with highly motivated students for a major project. They tell you their idea is to build a chatbot that humanizes AI-generated essays.",
-      "quote": "\"A society in which consumption has to be artificially stimulated is a society founded on trash and waste.\" - John de Graaf",
+      "text": "Every day feels the same. Today, you get grouped with highly motivated students for a major project. They tell you their idea is to build an app that builds harmful deepfakes.",
+      "quote": "\"An average person... could be perfectly incapable ot telling right from wrong.\" - Hannah Arendt (175)",
       "choices": [
         {
           "text": "Agree to start the venture, it could be profitable.",
@@ -208,7 +208,7 @@
       "quote": "\"inequality and inequality central to life in the United States are greater drivers of this virus than the gross desire to consume.\" - Affluenza.",
       "choices": [
         {
-          "text": "Lie on your resume to get yourself a high-paying job.",
+          "text": "Fabricate some of the sections of your resume to make it seem like you're a great engineer.",
           "stat_changes": { "visible": { "money": 30, "clout": 20 }, "hidden": { "collateral_damage": 15, "inner_peace": -25 } },
           "next_node": "engr_sem5_conform"
         },
@@ -292,7 +292,7 @@
     },
     {
       "id": "engr_sem5_rebel",
-      "text": "No one seems to like you, but that doesn't stop you. You need to use a mssive amount of power for your capstone. The 'normal' way is to use GPUs that consume horrific amounts of energy and water.",
+      "text": "No one seems to like you, but that doesn't stop you. You need to use a massive amount of power for your capstone. The 'normal' way is to use GPUs that consume horrific amounts of energy and water.",
       "quote": "\"Man can hardly recognize the devil of his own creation.\" - Carson (301)",
       "choices": [
         {
@@ -314,7 +314,7 @@
     },
     {
       "id": "engr_sem6_conform",
-      "text": "It's finals season and you have a massive job offer waiting. If your GPA drops it gets rescinded. You discover the professor's exam key is circulating on a private server...",
+      "text": "It's finals season and you have an internship offer, but if your GPA drops it gets rescinded. You discover the professor's exam key is circulating on a private server...",
       "quote": "\"He either wishes to do what other people do or he does what other people wish him to do.\" - Victor E. Frankl (106)",
       "choices": [
         {
@@ -358,7 +358,7 @@
     },
     {
       "id": "engr_sem6_rebel",
-      "text": "You're respected by a few, but completely ignored by the corporate recruiters. A startup offers you a large amount of equity to develop an app that takes advantage of gig workers.",
+      "text": "You're respected by a few close friends, but completely ignored by recruiters. A startup offers you a large amount of equity to develop an app that takes advantage of gig workers.",
       "quote": "\"Alienated labor reverses the relationship... he... makes his life activity, his being, only a means for his existence.\" - Karl Marx (154)",
       "choices": [
         {
@@ -380,7 +380,7 @@
     },
     {
       "id": "engr_sem7_conform",
-      "text": "You're in the final stretch. You are 'successful.' You have the job, the money, the clout. But you feel completely empty. A massive tech conference invites you to speak on Innovation.",
+      "text": "You’re seen as “'successful.” You have the job, the money, and the status. But you feel completely empty. A massive tech conference invites you to speak.",
       "quote": "\"The more the worker declines in intelligence and becomes a slave of nature...\" - Karl Marx (152)",
       "choices": [
         {
@@ -416,7 +416,7 @@
           "next_node": "engr_sem8_avoid"
         },
         {
-          "text": "Refuse the referral and ask this friend to work on an app to help students with you.",
+          "text": "Refuse the referral and ask this friend to work on an app to help students.",
           "stat_changes": { "visible": { "clout": -15 }, "hidden": { "lives_uplifted": 20, "inner_peace": 25 } },
           "next_node": "engr_sem8_rebel"
         }
@@ -438,7 +438,7 @@
           "next_node": "engr_sem8_avoid"
         },
         {
-          "text": "Attend the ceremony. You're unprepared for the exam, but you find the place you truly belong.",
+          "text": "Attend the ceremony at risk of failing, but you find the place you truly belong.",
           "stat_changes": { "visible": { "resume": -25, "clout": -10 }, "hidden": { "lives_uplifted": 20, "inner_peace": 30 } },
           "next_node": "engr_sem8_rebel"
         }
@@ -504,7 +504,7 @@
           "next_node": "epilogue_trigger"
         },
         {
-          "text": "Delete the email, you don't need a cushy job to feel fulfilled.",
+          "text": "Delete the email, you don't need a cushy job to feel fulfilled",
           "stat_changes": { "visible": { "money": -10, "clout": -10 }, "hidden": { "lives_uplifted": 10, "inner_peace": 40 } },
           "next_node": "epilogue_trigger"
         }
@@ -992,25 +992,25 @@
       {
         "if": "hidden.inner_peace < 20 && hidden.collateral_damage > 50",
         "title": "Trapped in the Iron Cage",
-        "text": "10 Years Later: You have everything society told you to want. You are incredibly wealthy and highly respected. But your work has systematically harmed others, automated away jobs, and extracted resources without giving back. You stare at your massive bank account, completely alienated from your own life. The dangerous illusion worked.",
-        "quote": "The cloak should become an iron cage. - Max Weber"
+        "text": "10 Years Later: YYou find yourself with a lot of money in the bank, respect from your colleagues, and a killer career, but you don't feel whole. Something's missing. You're finally starting to see the effects of your choices: jobs have been automated, and resources have been exploited. Although you thought you'd be happy after doing all this, you realize all your choices were based on an illusion.",
+        "quote": "\"The cloak should become an iron cage.\" - Max Weber"
       },
       {
         "if": "hidden.inner_peace >= 60 && hidden.lives_uplifted > 50",
         "title": "You Found Your Purpose",
         "text": "10 Years Later: Your resume is a mess. You never made the 30-under-30 list. But the systems you built empower people. You rejected the status quo, and while society punished you with lower pay and less prestige, you sleep soundly. You broke the illusion, and in doing so, you found out what actually matters.",
-        "quote": "He who has a why to live, can bear almost any how. - Viktor E. Frankl & Friedrich Nietzsche"
+        "quote": "\"He who has a why to live, can bear almost any how.\" - Viktor E. Frankl & Friedrich Nietzsche"
       },
       {
         "if": "hidden.inner_peace < 40 && hidden.lives_uplifted < 30 && hidden.collateral_damage < 30",
-        "title": "You Wasted The Most Important Years Of Your Life",
-        "text": "10 Years Later: You avoided doing evil, but you also avoided doing good. You coasted through the system, neither conforming deeply nor rebelling meaningfully. You escaped the worst of the corporate machine, but you failed to find your authentic purpose.",
+        "title": "No Sense of Purpose",
+        "text": "10 Years Later: You were stuck in the middle. You coasted through the system, neither conforming deeply nor rebelling meaningfully. You may have avoided the issues with society altogether, but you never found your true purpose.",
         "quote": "\"Lukewarm acceptance is more bewildering than outright rejection.\" - Martin Luther King Jr. (211)"
       },
       {
         "if": "default",
         "title": "The Choice Is Still Yours",
-        "text": "10 Years Later: You compromised. You took some of the money, and you tried to do some good on the side. You are comfortable, but the tension between the societal illusion and your inner authenticity remains a daily battle.",
+        "text": "10 Years Later: You gave into the illusion at times, but stayed true to yourself at others. You're comfortable, but the tension between the societal illusion and your inner authenticity remains a daily battle.",
         "quote": "Live as if you were living the second life and had acted as wrongly the first time as you are about to act now. - Viktor E. Frankl"
       }
     ]
